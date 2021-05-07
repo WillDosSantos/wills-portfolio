@@ -7,28 +7,22 @@ image: 'ready-five-marketing.png'
 
 # Welcome to GatsbyJS
 
-If you are hearing about GatsbyJS for the first time on my blog, first I am honored I get to share this with you. And second, perpare to have your mind blown.
+If you are hearing about GatsbyJS for the first time on my blog, first I am honored I get to share this with you. And second, perpare to have your mind blown. Well, maybe not but it's still pretty cool.
 
-### Version 1
+With GatsbyJS, you can make a lighting fast site with all the trimmings. The The GatsbyJS community is full of people that are contributing wonderful themes (gatsby starters) which make creating custom sites a lot easier for a front end developer.
 
-[ScreenShot]
+In fact, this site was built using GatsbyJS and so is our marketing site at [Planning Center](https://www.planningcenter.com). So when our team at [ReadyFive](https://www.readyfive.io) wanted a marketing site, I knew exactly what I was going to use.
 
-### Visual Design System
+### Initial Comps
 
-For the design system, I decided to work directly with our lead developer and co-founder Tanner Mares. The game plan was that I would define the styles in our Figma doc, and notify him once each section/category of the system was complete. Once he was notified, he would implement the styles. We hammered it out in about 2 weeks - if that. Love working with that guy!
+ReadyFive's founders James Miller and Tanner Mares, wanted something like looked clean and updated with a style that would blen nicely with the branding we did for the app. There wasn't a lot of thought when it came to the content at first, but after I started some low fidelity mockups, we were able to refine the approach.
 
-Because I complete control of the visual direction and both James and Tanner trusted me to get the job done, I was was able to streamline the process a lot faster. There are a lot of things I would probably change, but in order to achieve a MVP, I felt it was necessary to move as fast as possible.
+![Comp 1](comp-1.png)
 
-#### Light Mode
+This comp above was a first attempt at what the idea of the site could look like. Standard sections with some nice gradients in order to make the content stand out. The next section is more of an abstract approach but still with a similar layout and it was actually something that we did implement in the first round of coding up the site.
 
-#### Dark Mode
+![Comp 2](comp-2.png)
 
-Working on the dark mode, we decided to take an easier approach with only lessing the HSL by 20% for for the majority of the colors on the buttons and inputs. Thankfully, because the app is still fairly new, we have some room to experiment and gauge user feedback. One thing that is crucial and should have been from the beginning is accessibility, which we will be looking to refine further hopefully in the near future.
+### Reflection and Revision
 
-![Forms Dark Mode](design-system-forms.png)
-<br/>
-<br/>
-![Buttons Dark Mode](design-system-buttons.png)
-<br/>
-<br/>
-![Headers Dark Mode](design-system-headers.png)
+After fter sitting on it for a month or so, I took a brand new approach to the layout and simplified the design to strictly focus on the mobile app itself. The mobile app is what separates ReadyFive from both VictorOps(Splunk) and PagerDuty, in that we built it from the ground up just to include only the necessary features you would need for an alert system on your mobile device.

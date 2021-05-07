@@ -20,11 +20,7 @@ So if you are a first timer with React Native and CSS-in-JS, I would recommend t
 1. A basic understanding of CSS
 2. A basic understanding of JS
 
-That's it. The rest is kind of self explanitory with some gotchas along the way.
-
-### Version 1
-
-[ScreenShot]
+That's it. The rest is kind of self explanitory with some gotchas along the way. The biggest hurdle for any front end developers is saying _className_ instead of _class_. There is also the requirement that within ever JS file (component) you have to keep your markup instead of one main _div_.
 
 ### Visual Design System
 
@@ -53,3 +49,9 @@ Working on the dark mode, we decided to take an easier approach with only lessin
 <br/>
 <br/>
 ![Headers Dark Mode](design-system-headers.png)
+
+#### Icons
+
+Making icons is always an enjoyable process for me. The image below is one of my earlier attempts and for the most part they all seemed to do the trick. Most developers I meet often default to package icons with Materials or any of the other hundreds of thousand icon packs that are out there, but I find that when I make them for a particular application or site, it gives it more identity.
+
+![Icons](icons-stage-2.png)
