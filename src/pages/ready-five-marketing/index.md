@@ -26,3 +26,9 @@ This comp above was a first attempt at what the idea of the site could look like
 ### Reflection and Revision
 
 After fter sitting on it for a month or so, I took a brand new approach to the layout and simplified the design to strictly focus on the mobile app itself. The mobile app is what separates ReadyFive from both VictorOps(Splunk) and PagerDuty, in that we built it from the ground up just to include only the necessary features you would need for an alert system on your mobile device.
+
+![Comp 3](comp-3.png)
+
+Howowever, this approach (while we did implement it) did not take off as a result of it being too similar to other sites that we have seen. Being inspired is one thing, but we don't want to come off as copying someone elses hard work. So we adjusted that layout and got to where we are today.
+
+![Comp 4](comp-4.png)
