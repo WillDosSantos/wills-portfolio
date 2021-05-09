@@ -58,3 +58,15 @@ It was a very fun game and the dynamics of it were simple. Your character is con
 We spent a good amount of time trying to make a similar gameplay and feel in Yarn without completely ripping off the idea of KOT. The end goals, for example, were different. In KOT, the player's end goal is to reach the treasure at the end and dodge the obstacles and enemies in the way.
 
 In Yarn, the player had to dodge some obstacles, but they the end goal was killing all the catz on the level.
+
+## Marketing and Fun!
+
+We did a lot of little fun things with marketing but ultimately it's a lot of trial and error. Our [website](http://ewgames.us/yarn/), though a pretty meat and potatoes type of layout, did a good job of explaining all what we needed at the time.
+
+## Aftermath of Yarn!
+
+Yarn is still out there, wrangling cat zombies. We haven't touched the game in a while but we have talked about other games that we could do in the near future as a result of what we learned from Yarn. The goal now is to get something on the Nintendo Switch store. We have a couple of ideas but nothing really solid at the moment.
+
+My friend and co-worker, Kevin Thompson, created a low 8bit version of the game and I got to say it's pretty awesome! You can check it out [here](https://www.lexaloffle.com/bbs/?tid=40951)
+
+Until then, stay safe out there and watch out for those CatZ!

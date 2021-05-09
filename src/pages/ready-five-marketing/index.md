@@ -32,3 +32,9 @@ After fter sitting on it for a month or so, I took a brand new approach to the l
 Howowever, this approach (while we did implement it) did not take off as a result of it being too similar to other sites that we have seen. Being inspired is one thing, but we don't want to come off as copying someone elses hard work. So we adjusted that layout and got to where we are today.
 
 ![Comp 4](comp-4.png)
+
+### Final result
+
+You can see our final result [here](https://readyfive.io) and check out the work that was done. For the animations on the images fading in I used this cool little package [Gatsby Plugin Scroll Reveal](https://www.gatsbyjs.com/plugins/gatsby-plugin-scroll-reveal/) which has been really simple and easy to use. I highly recommend it. It does make the mark up a little bit heavier visually, but I think it's worth it in the long run.
+
+I can't wait to do more with this site and implement some cool [Lottie](https://www.gatsbyjs.com/plugins/gatsby-remark-lottie/) animations to it. Stay tuned!

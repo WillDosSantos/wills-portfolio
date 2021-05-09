@@ -15,7 +15,7 @@ function BlogPost(props) {
               <a className="blog-nav" href="/">Go Back</a>
               <div className="hero-banner">
                 <h1>{title}</h1>
-                <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+                <Img style={{height: "400px"}} fluid={post.frontmatter.image.childImageSharp.fluid} />
               </div>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </section>

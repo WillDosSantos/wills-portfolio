@@ -1,6 +1,6 @@
 ---
-title: 'Church Center'
-description: Web Design
+title: 'Church Center Page Design'
+description: A collection of web designs for our Church Center application
 date: '2019-02-12'
 image: 'churchCenter.jpg'
 ---
