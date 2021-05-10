@@ -76,7 +76,7 @@ export default () => (
         </div>
         <ul className="actions actions--resume">
           <li>
-            <a className="button btn--resume" href="#">Download Resume...</a>
+            <a className="button btn--resume" href="/images/resume.pdf" download>Download Resume...</a>
           </li>
         </ul>
         </section>

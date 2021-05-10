@@ -29,6 +29,13 @@ module.exports = {
         }, 
         'gatsby-remark-static-images',
         'gatsby-remark-embed-figma',
+        {
+          resolve: "gatsby-remark-embed-youtube",
+          options: {
+            width: 800,
+            height: 400
+          }
+        }
       ],
       },
     },

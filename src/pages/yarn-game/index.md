@@ -28,6 +28,10 @@ In order to defeat the cats every level, you would have to create your path by d
 <img src="level-2.png" alt="Level 2 - Version 1"/>
 <img src="level-3.png" alt="Level 3 - Version 1"/>
 <img src="level-4.png" alt="Level 4 - Version 1"/>
+<img src="level-5.png" alt="Level 5 - Version 1"/>
+<img src="level-6.png" alt="Level 6 - Version 1"/>
+<img src="level-7.png" alt="Level 7 - Version 1"/>
+<img src="level-8.png" alt="Level 8 - Version 1"/>
 </div>
 <br/>
 <br/>
@@ -43,7 +47,7 @@ At first, the gameplay was vertical and the player would navigate Doodle down th
 
 <div class="blog-image--grid">
 <img src="home-screen-portrait.png" alt="Home Screen Portrait"/>
-<img src="demo.gif" alt="Home Screen Portrait"/>
+<img src="demo.gif" alt="Home Screen Portrait" style="max-width: 390px;"/>
 </div>
 
 <br/>
@@ -55,18 +59,37 @@ After testing and building the vertical gameplay for a good amount of time (roug
 
 It was a very fun game and the dynamics of it were simple. Your character is constantly moving forward, and by tapping on the screen you could jump. The jump action would also allow the player to pivot off of walls and boundaries in order to change direction or scale up a vertical path. Perfect!
 
+![Level 1 Landscape](level-1-ld.png)
+
+<br>
+<br>
+
+![Level 2 Landscape](level-2-ld.png)
+
+<br>
+<br>
+
+![Level 3 Landscape](level-3-ld.png)
+
+<br>
+<br>
+
+![Level 4 Landscape](level-4-ld.png)
+
 We spent a good amount of time trying to make a similar gameplay and feel in Yarn without completely ripping off the idea of KOT. The end goals, for example, were different. In KOT, the player's end goal is to reach the treasure at the end and dodge the obstacles and enemies in the way.
 
 In Yarn, the player had to dodge some obstacles, but they the end goal was killing all the catz on the level.
 
 ## Marketing and Fun!
 
-We did a lot of little fun things with marketing but ultimately it's a lot of trial and error. Our [website](http://ewgames.us/yarn/), though a pretty meat and potatoes type of layout, did a good job of explaining all what we needed at the time.
+We did a lot of little fun things with marketing but ultimately it's a lot of trial and error. Our [website](http://ewgames.us/yarn/), though a pretty meat and potatoes type of layout, did a good job of explaining all what we needed at the time. One of the fun bits was making a promotional video. I was glad to see I hadn't lost my After Effects and Premier skills.
+
+`youtube:https://www.youtube.com/embed/u3-OFSZnxDA`
 
 ## Aftermath of Yarn!
 
 Yarn is still out there, wrangling cat zombies. We haven't touched the game in a while but we have talked about other games that we could do in the near future as a result of what we learned from Yarn. The goal now is to get something on the Nintendo Switch store. We have a couple of ideas but nothing really solid at the moment.
 
-My friend and co-worker, Kevin Thompson, created a low 8bit version of the game and I got to say it's pretty awesome! You can check it out [here](https://www.lexaloffle.com/bbs/?tid=40951)
+My friend and super talented co-worker, [Kevin Thompson](https://www.linkedin.com/in/kevindthompson/), created a low 8bit version of the game and I got to say it's pretty awesome! You can check it out [here](https://www.lexaloffle.com/bbs/?tid=40951) I wouldn't mind creating a few more levels for that 8 bit madness. Maybe when time allows for more game development.
 
-Until then, stay safe out there and watch out for those CatZ!
+Until then, stay safe out there and watch out for those CatZ! Check out our [Yarn Twitter](https://twitter.com/yarnthegame) for any updates in the future.
