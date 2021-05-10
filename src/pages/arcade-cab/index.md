@@ -1,13 +1,11 @@
 ---
-title: "Arcade Cabinet"
+title: 'Arcade Cabinet'
 description: That time me and the guys built an arcade cabinet
 date: '2016-12-12'
 image: 'arcade.jpg'
 ---
 
 ###Pico's Arcade
-
-[Watch the video](https://www.youtube.com/watch?v=jn4KBsGZRSk) of the design and construction of the arcade cabinet.
 
 One day during our lunch break, I turned to a friend of mine and said, “It would be really cool to have an arcade cabinet here.” Now, I will admit, this was a selfish request, at least a little bit. And for the most part, I didn’t think anything would come out of it.
 But then I started to think about it. Our boss, Jeff Berg, cares about every single one of his employees and he shows it to us every day. Whether just by listening to us, or doing really cool things around the office like nerf wars, scooters, billiards, darts, the list goes on.
@@ -25,3 +23,5 @@ Designing the cabinet was a little tough, but Erik Bye led a great team.
 I’m super proud whenever we have visitors to the office and they right away want to go over to the cabinet and play with it. It’s great for all ages, and everyone gets a kick out of it.
 
 Thanks goes to Jeff Berg for allowing us the opportunity to build something great for an already great company.
+
+`youtube:https://www.youtube.com/embed/jn4KBsGZRSk`

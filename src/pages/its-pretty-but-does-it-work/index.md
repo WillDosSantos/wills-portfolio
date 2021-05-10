@@ -1,5 +1,5 @@
 ---
-title: "It's pretty, but does it work?"
+title: 'Widgets for Android & iOS'
 description: Making widgets for iOS and Android for multiple device widths
 date: '2021-03-11'
 image: 'widget.png'
@@ -42,3 +42,21 @@ The main idea is to get the person to take one solid action while at the same ti
 <img src="screenshot-2.png" alt="Screenshot 2"/>
 <img src="screenshot-3.png" alt="Screenshot 3"/>
 </div>
+
+<br>
+<br>
+
+### Multiple device sizing
+
+Accounting for the multiple device sizing was something that our product manager, Aaron Stewart, had chatted with me about. He gave me different stats and metrics that would be included in the different sizes.
+
+In this case, when I designed the first few rounds, they looked really pretty however, there was a lot of confusion on what the UI that was there was actually conveying. _It didn't really work._
+
+So, I worked with our product manager on a video call and rearranged the UI in order to make it a lot more usable for our users. Our lead designer Shane Armitage gave it some polish before we called it done. Overall, there was a lot of trial and error but the end result and conclusion is that even if it looks good, that doesn't mean that it will make sense to our users or even used. It has to work.
+
+![Light Mode](screenshot-2-lm.png)
+
+<br>
+<br>
+
+![Dark Mode](screenshot-1-dm.png)

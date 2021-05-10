@@ -30,13 +30,13 @@ Because I complete control of the visual direction and both James and Tanner tru
 
 #### Light Mode
 
-![Forms Light Mode](design-system-forms-light-mode.png)
+![Blank State 1](blank-state-default.png)
 <br/>
 <br/>
-![Headers Light Mode](design-system-headers-light-mode.png)
+![Blank State 2](blank-state-incidents.png)
 <br/>
 <br/>
-![Buttons Light Mode](design-system-buttons-light-mode.png)
+![Blank State 3](blank-state-teams.png)
 
 #### Dark Mode
 

@@ -31,15 +31,3 @@ Anyone who remembers this little nudget of usefulness to slice up layers into in
 I was leaning very skewmorphic those days (some of it has recently resurfaced in my work) but I really wanted to make it to where the UI felt similar to something one would physically use IRL. There was a fair amount of musicians at the time that seemed to be going more analog and less digital as well, so this path for the design seemed like a practical approach.
 
 The latest update for Music Stand was accomplished with Adobe Illustrator. Again, this was prior to Sketch and Figma and we have been using those tools (primarily Figma) for the past few years now.
-
-## Designing the product and marketing campaign
-
-After a few character sketches I went to work in Illustrator. I didn't spend too much time on the outlines and would have liked to. There ultimately was a lot that I ended up not liking - especially with the legibility of the text on the back cover. But for the first run as a year 1 art student, I felt like it did the job.
-<br/>
-<br/>
-<br/>
-<br/>
-
-## Final
-
-If you want to try the game, you can download it from the Google Play Store and the App Store. You can also visit [Vet Island](http://vetisland.com) to get a little more of an overview of the game and our ideas behind it.
