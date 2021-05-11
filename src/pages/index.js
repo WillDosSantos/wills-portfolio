@@ -17,12 +17,12 @@ const IndexPage = (props) => {
                       data-sal-easing="ease"
                       data-sal-duration="1000"
                       className="main-title-intro">Design to improve the experience of others.</h2>
-                    <div className="bars"
+                   {/* <div className="bars"
                     data-sal="fade-in"
                     data-sal-delay="0"
                     data-sal-easing="ease"
                     data-sal-duration="1000"
-                    ></div>
+                    ></div>*/}
                 </header>
                 <p 
                 data-sal="slide-up"
