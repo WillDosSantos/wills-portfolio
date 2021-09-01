@@ -26,9 +26,10 @@ module.exports = {
             maxWidth: 590,
             quality: 100,
           },
-        }, 
+        },
         'gatsby-remark-static-images',
         'gatsby-remark-embed-figma',
+        'gatsby-remark-lottie',
         {
           resolve: "gatsby-remark-embed-youtube",
           options: {

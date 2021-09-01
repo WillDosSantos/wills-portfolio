@@ -1,7 +1,7 @@
 ---
-title: 'Error Pages with Lottie'
-description: Web Design
-date: '2018-05-02'
+title: 'Working with Lottie and GatsbyJS'
+description: A look into working with Lottie and GatsbyJS marketing sites
+date: '2021-05-13'
 image: 'error-thumb.jpg'
 ---
 
@@ -28,4 +28,3 @@ For the Planning Center products, we typically have our mascot PiCO as a little 
 <br/>
 
 ![Error 500 Page Design Animation](500-anim.gif)
-![alt text](500anim.json)

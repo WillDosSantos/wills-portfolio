@@ -19,12 +19,32 @@ A group of us which included Tanner Mares, Travis Arnold, & Kevin Thompson, work
 
 ## Light Mode
 
-![Lizard](lizard.png)
+![Dashboard Mock 1](lizard.png)
 
 ## Dark Mode
 
-![Venom](venom.png)
+![Dashboard Mock 2](venom.png)
+
+<br/>
+<br/>
+
+![Dashboard Mock 3](spidey.png)
 
 I went a little overboard on the alerts for data base emergencies.
 
-![Dr Oc](dr-oc.png)
+![Dashboard Mock 4](dr-oc.png)
+
+<br/>
+<br/>
+
+![Dashboard Mock 5](black-cat.png)
+
+<br/>
+<br/>
+
+We can't share the site for our custom dashboards, however you should able to customize your own amazing dashboard with [Dashing](http://dashing.io/) which is what we used to create our dashboards along with [Charts.js](https://www.chartjs.org/)
+
+<br/>
+<br/>
+
+![Dashboard In the office](dashboard-office.jpg)
