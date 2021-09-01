@@ -17,6 +17,7 @@ For example, if you try to do animations with adjustment layers or distortion ef
 
 ### The Design
 
+
 For the Planning Center products, we typically have our mascot PiCO as a little helper for customers that run into issues or need help.
 
 ![Error 500 Page Design - Web Layout](500-web.png)
