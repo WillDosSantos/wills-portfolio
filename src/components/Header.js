@@ -27,7 +27,7 @@ const Header = (props) => {
                     <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
                     <h1><strong>William G. dos Santos</strong></h1>
                     <h2>Senior Designer</h2>
-                    <em>at <a className="avatar-link" href="http://planning.center" target="_blank">Planning Center</a></em>
+                    <em>at <a className="avatar-link" href="http://planning.center" >Planning Center</a></em>
                 
                 
                     </div>

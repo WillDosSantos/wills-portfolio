@@ -4,8 +4,6 @@ import Layout from '../components/layout'
 import ReadyFive from "./imgs/work-history/ready-five-logo.svg"
 import PlanningCenter from "./imgs/work-history/pco-logo.svg"
 import ElliesGames from "./imgs/work-history/ellies-games-logo.svg"
-import Hero from "./imgs/work-history/about-hero.svg"
-import ResumeIcon from "./imgs/work-history/resume.svg"
 
 export default () => (
   <Layout style={{ color: `teal` }}>
