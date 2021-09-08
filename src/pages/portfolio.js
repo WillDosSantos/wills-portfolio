@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Portfolio = (props) => {
   const postList = props.data.allMarkdownRemark;
@@ -20,7 +20,7 @@ const Portfolio = (props) => {
             >
               <Link to={node.fields.slug} className="link" >
                 <div className="post-list">
-                  <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
+                  <GatsbyImage sizes={node.frontmatter.image.childImageSharp.sizes} />
                   <em>{node.frontmatter.date}</em>
                   <h3>{node.frontmatter.title}</h3>
                   <p>{node.frontmatter.description}</p>
@@ -52,20 +52,18 @@ export const listQuery = graphql`
             date(formatString: "MMMM Do YYYY")
             title
             image {
-                childImageSharp{
-                  fluid(quality: 100) {
-                        ...GatsbyImageSharpFluid
-                        presentationWidth
-                    }
-                    sizes(maxWidth: 600) {
-                        ...GatsbyImageSharpSizes
-                    }
-                }
-            }
+              childImageSharp{
+                gatsbyImageData(
+                  maxWidth: 600
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              {
             description
           }
         }
       }
     }
   }
+}
 `

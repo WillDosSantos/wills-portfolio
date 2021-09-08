@@ -13,6 +13,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, {
       resolve: `gatsby-transformer-remark`,
@@ -55,6 +56,5 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    'gatsby-plugin-scroll-reveal',
   ],
 }
