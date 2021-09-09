@@ -50,7 +50,7 @@ const IndexPage = (props) => {
                   >
                     <Link to={node.fields.slug} className="link" >
                       <div className="post-list">
-                        <GatsbyImage sizes={node.frontmatter.image.childImageSharp.sizes} />
+                        <GatsbyImage image={node.frontmatter.image} />
                         <em>{node.frontmatter.date}</em>
                         <h3>{node.frontmatter.title}</h3>
                         <p>{node.frontmatter.description}</p>
