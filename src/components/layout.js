@@ -1,19 +1,41 @@
-import React from 'react'
-import '../assets/scss/main.scss'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
-import Header from './Header'
+import * as React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-class Template extends React.Component {
-    render() {
-        const { children } = this.props
+import Sidebar from "./sidebar"
+import "./layout.css"
+import "./styles.css"
 
-        return (
-            <div>
-                <Header />
-                {children}
-            </div>
-        )
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
     }
+  `)
+
+  return (
+    <div className="outer-wrapper">
+      <Sidebar/>
+      <main>
+        {children}
+      </main>
+    </div>
+  )
 }
 
-export default Template
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
