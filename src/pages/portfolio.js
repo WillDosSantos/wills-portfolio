@@ -54,16 +54,16 @@ export const listQuery = graphql`
             image {
               childImageSharp{
                 gatsbyImageData(
-                  maxWidth: 600
+                  width: 600
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
-              {
+              }
+            }
             description
           }
         }
       }
     }
   }
-}
 `

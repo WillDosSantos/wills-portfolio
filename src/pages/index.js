@@ -112,19 +112,18 @@ export const listQuery = graphql`
             date(formatString: "MMMM Do YYYY")
             title
             image {
-                childImageSharp{
-                  gatsbyImageData(
-                    maxWidth: 600
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
-                  ) 
-                {
+              childImageSharp{
+                gatsbyImageData(
+                  width: 600
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                ) 
+              }
             }
             description
           }
         }
       }
     }
-  }
   }
 `
