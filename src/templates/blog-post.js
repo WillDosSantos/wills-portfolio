@@ -1,12 +1,13 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby'
 
 function BlogPost(props) {
 
     const post = props.data.markdownRemark;
     const { title } = post.frontmatter;
+    const image = getImage(props.data.markdownRemark.frontmatter.image);
 
     return (
       <Layout>
@@ -15,7 +16,7 @@ function BlogPost(props) {
               <a className="blog-nav" href="/">Go Back</a>
               <div className="hero-banner">
                 <h1>{title}</h1>
-                <GatsbyImage style={{height: "400px"}} image={post.frontmatter.image} />
+                <GatsbyImage style={{height: "400px"}} image={image} />
               </div>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </section>

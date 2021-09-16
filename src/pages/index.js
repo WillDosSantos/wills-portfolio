@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const IndexPage = (props) => {
   const postList = props.data.allMarkdownRemark;
+  const image = getImage(props.data.allMarkdownRemark.edges.node.frontmatter.image);
 
   return (
     <Layout>
@@ -50,7 +51,7 @@ const IndexPage = (props) => {
                   >
                     <Link to={node.fields.slug} className="link" >
                       <div className="post-list">
-                        <GatsbyImage image={node.frontmatter.image} />
+                        <GatsbyImage image={image} />
                         <em>{node.frontmatter.date}</em>
                         <h3>{node.frontmatter.title}</h3>
                         <p>{node.frontmatter.description}</p>
