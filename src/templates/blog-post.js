@@ -1,46 +1,107 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-function BlogPost(props) {
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-    const post = props.data.markdownRemark;
-    const { title } = post.frontmatter;
+const BlogPostTemplate = ({ data, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { previous, next } = data
 
-    return (
-      <Layout>
-          <div id="main">
-            <section id="one" className="blog-post">
-              <a className="blog-nav" href="/">Go Back</a>
-              <div className="hero-banner">
-                <h1>{title}</h1>
-                <GatsbyImage style={{height: "400px"}} image={post.frontmatter.image} />
-              </div>
-              <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            </section>
-          </div>
-      </Layout>
-    )
+  return (
+    <Layout location={location} title={siteTitle}>
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <header>
+          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <p>{post.frontmatter.date}</p>
+        </header>
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          itemProp="articleBody"
+        />
+        <hr />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
+      <nav className="blog-post-nav">
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </Layout>
+  )
 }
-export default BlogPost
 
-export const query = graphql`
- query PostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+export default BlogPostTemplate
+
+export const pageQuery = graphql`
+  query BlogPostBySlug(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
+      id
+      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
         description
-        image {
-          childImageSharp{
-            gatsbyImageData(
-              width: 600
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            ) 
-          }
-        }
       }
     }
-  }`
+    previous: markdownRemark(id: { eq: $previousPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    next: markdownRemark(id: { eq: $nextPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+  }
+`

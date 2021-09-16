@@ -1,127 +1,87 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-const IndexPage = (props) => {
-  const postList = props.data.allMarkdownRemark;
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allMarkdownRemark.nodes
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Seo title="All posts" />
+        <Bio />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
   return (
-    <Layout>
-        <div id="main">
-            <section id="one">
-                <header className="major">
-                    <h2
-                      data-sal="slide-up"
-                      data-sal-delay="700"
-                      data-sal-easing="ease"
-                      data-sal-duration="1000"
-                      className="main-title-intro">Design to improve the experience of others.</h2>
-                   {/* <div className="bars"
-                    data-sal="fade-in"
-                    data-sal-delay="0"
-                    data-sal-easing="ease"
-                    data-sal-duration="1000"
-                    ></div>*/}
-                </header>
-                <p 
-                data-sal="slide-up"
-                data-sal-delay="700"
-                data-sal-easing="ease"
-                data-sal-duration="1000"
-                className="intro-line">Design is about a guided progression that empowers us and creates safety and sustainability. We cannot be afraid to take risks and take ownership of our faults in addtion to our strengths. I have found strength in my weaknesses and I have learned from my losses. Everyday is a new challenge and I accept it gladly.</p>
-                <ul 
-                data-sal="slide-up"
-                data-sal-delay="700"
-                data-sal-easing="ease"
-                data-sal-duration="1000"
-                className="actions">
-                  <li><Link to="/about" className="button">Learn More</Link></li>
-                </ul>
-            </section>
-            <section id="two">
-                <h2>Recent Work</h2>
-              <ul className="grid">
-                {postList.edges.map(({ node }, i) => (
-                  <li 
-                    data-sal="slide-up"
-                    data-sal-easing="ease"
-                    data-sal-duration="800"
-                  >
-                    <Link to={node.fields.slug} className="link" >
-                      <div className="post-list">
-                        <GatsbyImage image={node.frontmatter.image} />
-                        <em>{node.frontmatter.date}</em>
-                        <h3>{node.frontmatter.title}</h3>
-                        <p>{node.frontmatter.description}</p>
-                      </div>
+    <Layout location={location} title={siteTitle}>
+      <Seo title="All posts" />
+      <Bio />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
+
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
                     </Link>
-                  </li>
-                ))}
-                </ul>
-                <ul className="actions">
-                    <li><a href="/portfolio" className="button">View More</a></li>
-                </ul>
-            </section>
-
-            <section id="three">
-                <h2>Get In Touch</h2>
-                <p>Want to work together on a project? Send me an email with a description of what it is you would like to work on. I will respond to all inquires within 24 hours.</p>
-                <div className="row">
-                    <div className="8u 12u$(small)">
-                      <form method="POST" action="https://formspree.io/contact@willdossantos.com">
-                          <div className="row uniform 50%">
-                              <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                              <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                              <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                          </div>
-                          <ul className="actions mt-1">
-                            <li><input type="submit" value="Send Message" /></li>
-                          </ul>
-                        </form>
-                    </div>
-                    <div className="4u 12u$(small)">
-                        <ul className="labeled-icons">
-                            <li>
-                                <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                <a href="#">contact@willdossantos.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
     </Layout>
   )
 }
-export default IndexPage;
-export const listQuery = graphql`
-  query ListQuery {
-    allMarkdownRemark(
-      limit: 6
-      sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          fields{
-            slug
-          }
-          excerpt(pruneLength: 80)
-          frontmatter {
-            date(formatString: "MMMM Do YYYY")
-            title
-            image {
-              childImageSharp{
-                gatsbyImageData(
-                  width: 600
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                ) 
-              }
-            }
-            description
-          }
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
         }
       }
     }

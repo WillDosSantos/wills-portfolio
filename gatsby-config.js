@@ -1,60 +1,129 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    title: `Designing and Drawing makes for a happy place.`,
+    author: {
+      name: `William G. Dos Santos`,
+      summary: `Designer and Illustrator working on creative solutions`,
+    },
+    description: `An online portfolio blog showcasing artistic approaches to constraining problems.`,
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    social: {
+      twitter: `w_g_teller`,
+    },
   },
   plugins: [
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, {
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
-          resolve: `gatsby-remark-images`,
-          options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 590,
-            quality: 100,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
           },
-        },
-        'gatsby-remark-static-images',
-        'gatsby-remark-embed-figma',
-        'gatsby-remark-lottie',
-        {
-          resolve: "gatsby-remark-embed-youtube",
-          options: {
-            width: 800,
-            height: 400
-          }
-        }
-      ],
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
       },
     },
-    'gatsby-plugin-react-helmet',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/assets/images/avatar.png', // This path is relative to the root of the site.
+        name: `Gatsby Starter Blog`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    `gatsby-plugin-react-helmet`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }
