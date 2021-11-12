@@ -12,7 +12,7 @@
     "gatsby-cli": "^3.13.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-emotion": "^6.13.0",
-    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-image": "^1.14.2",
     "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",
@@ -36,7 +36,11 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "postcss": "^8.3.11",
     "prettier": "^2.3.2"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.11"
   },
   "keywords": [
     "gatsby"

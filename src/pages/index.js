@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const IndexPage = (props) => {
   const postList = props.data.allMarkdownRemark;
-  const image = getImage(props.data.allMarkdownRemark.edges.node.frontmatter.image);
+  const image = getImage(props.data.image);
 
   return (
     <Layout>
@@ -51,7 +51,7 @@ const IndexPage = (props) => {
                   >
                     <Link to={node.fields.slug} className="link" >
                       <div className="post-list">
-                        <GatsbyImage image={image} />
+                        <GatsbyImage image={node.image} />
                         <em>{node.frontmatter.date}</em>
                         <h3>{node.frontmatter.title}</h3>
                         <p>{node.frontmatter.description}</p>
