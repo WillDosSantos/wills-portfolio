@@ -28,4 +28,3 @@ For the Planning Center products, we typically have our mascot PiCO as a little 
 <br/>
 
 ![Error 500 Page Design Animation](500-anim.gif)
-![alt text](500anim.json)
