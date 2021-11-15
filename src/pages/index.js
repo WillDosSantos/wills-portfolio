@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const IndexPage = (props) => {
   const postList = props.data.allMarkdownRemark;
-  const image = getImage(props.data.image);
+  const image = getImage(postList.image);
 
   return (
     <Layout>
@@ -51,7 +51,7 @@ const IndexPage = (props) => {
                   >
                     <Link to={node.fields.slug} className="link" >
                       <div className="post-list">
-                        <GatsbyImage image={node.image} />
+                        <GatsbyImage image={node.frontmatter.image.childImageSharp.gatsbyImageData} alt={node.frontmatter.description} />
                         <em>{node.frontmatter.date}</em>
                         <h3>{node.frontmatter.title}</h3>
                         <p>{node.frontmatter.description}</p>
@@ -115,9 +115,7 @@ export const listQuery = graphql`
             image {
               childImageSharp{
                 gatsbyImageData(
-                  width: 600
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
+                  width: 900
                 ) 
               }
             }
