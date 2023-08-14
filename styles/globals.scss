@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: "Poppins", sans-serif;
+}
+
+/* styles/globals.css */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(90deg, #6663ff 0%, #ed2290 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    .sidebar-title {
+      font-size: 90px;
+      // animation: fadeIn 1.5s forwards;
+      text-align: center;
+    }
+  }
+}
+
+.slide-up-enter,
+.slide-up-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.slide-up-enter-active,
+.slide-up-exit-done {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms; /* Adjust these as you see fit */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.intro-line {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.48px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px;
+  width: 100%;
+  ul {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    align-items: center;
+    li {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+main {
+  margin-left: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.post-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #0e0e0e;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 40px; /* Optional: Spacing between grid items */
+  margin: 4em;
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+}
+
+.btn--primary {
+  border-color: #6663ff;
+  color: #6663ff;
+}
+
+.job-title-container {
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    &:first-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  }
+}
+
+.job-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blog-post-container {
+  padding: 2em;
+}
+
+.header-quote {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2em auto 0 auto;
+  h2 {
+    background: linear-gradient(160deg, #6663ff 0%, #ed2290 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .speaker {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+  }
+}
+
+.blog-post-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  .post-feature-image {
+    width: 100%;
+  }
+  h2 {
+    background: linear-gradient(160deg, #6663ff 0%, #ed2290 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+  }
+}
