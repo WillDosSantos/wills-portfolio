@@ -331,3 +331,52 @@ h1 {
     height: 119px;
   }
 }
+
+.inner-page-container {
+  padding: 3em;
+  height: 100%;
+}
+
+.timeline {
+  position: relative;
+  height: 100%;
+  &:after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .work-card {
+    display: flex;
+    margin: 0 auto;
+    max-width: 780px;
+  }
+  .work-card-date {
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+  }
+  .work-card-main {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.50);
+    padding: 25px 18px;
+    font-size: 12px;
+    max-width: 350px;
+    h3 {
+      
+    }
+    p {
+      margin-top: 1em;
+      color: rgba(255, 255, 255, 0.50);
+      line-height: 22px;
+    }
+  }
+}
