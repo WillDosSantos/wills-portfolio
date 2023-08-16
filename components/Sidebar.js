@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
+import Link from "next/link";
 
 // components/Sidebar.js
 function Sidebar() {
@@ -13,7 +14,7 @@ function Sidebar() {
     const interval = setInterval(() => {
       setIsEntering((prev) => !prev); // Toggle between entering and exiting
     }, 5000); // 5 seconds delay
-  
+
     return () => clearInterval(interval);
   }, []);
 
@@ -33,7 +34,12 @@ function Sidebar() {
           classNames="slide-up"
           onExited={handleExited}
         >
-          <h1 style={{ position: "relative" }} ref={titleRef} key={titles[currentIndex]} className="sidebar-title">
+          <h1
+            style={{ position: "relative" }}
+            ref={titleRef}
+            key={titles[currentIndex]}
+            className="sidebar-title"
+          >
             {titles[currentIndex]}
             <span className="title-shadow">{titles[currentIndex]}</span>
           </h1>
@@ -48,14 +54,9 @@ function Sidebar() {
             <span className="job-title">Founding Designer</span>
           </li>
         </ul>
-        <button
-          style={{
-            marginTop: "2em",
-          }}
-          className="btn btn--outline btn--primary"
-        >
-          Past work
-        </button>{" "}
+        <Link style={{ marginTop: "2em" }} className="btn btn--outline btn--primary" href="/work-history">
+            Past work
+        </Link>{" "}
         {/* This could be a modal or a link */}
       </div>
       {/* Add more content here */}

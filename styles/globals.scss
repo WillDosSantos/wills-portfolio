@@ -72,7 +72,7 @@ body {
   }
 }
 
-.slide-up-enter{
+.slide-up-enter {
   opacity: 0;
   transform: translateY(10%);
 }
@@ -99,7 +99,6 @@ body {
   transform: translateY(-20%); /* Adjust for a slight upward shift */
   transition: opacity 500ms, transform 500ms;
 }
-
 
 .intro-line {
   font-size: 16px;
@@ -128,9 +127,37 @@ body {
       letter-spacing: 3px;
       text-transform: uppercase;
       cursor: pointer;
+      position: relative;
+      &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #6663ff;
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        transition: width 0.2s linear;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    .active {
+      color: #6663ff;
+      font-weight: bold;
+      &:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #6663ff;
+        display: block;
+        position: relative;
+        top: 2px;
+      }
     }
   }
 }
+
 
 .container {
   display: flex;
@@ -159,7 +186,7 @@ h1 {
   }
   .post-card--desc {
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     margin: 0.5em 0 2em 0;
   }
   .post-card__footer {
@@ -170,6 +197,7 @@ h1 {
     ul {
       color: #606060;
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
     p {
       color: #fff;
@@ -191,6 +219,7 @@ h1 {
   text-transform: uppercase;
   border: 1px solid #fff;
   padding: 1em;
+  text-align: center;
 }
 
 .btn--primary {
@@ -268,12 +297,11 @@ h1 {
   }
 }
 
-
 .title-shadow {
   color: black;
   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #6663FF;
+  -webkit-text-stroke-color: #6663ff;
   position: absolute;
   left: 10px;
   right: 0px;
@@ -281,7 +309,7 @@ h1 {
   z-index: -1;
   display: block;
   &:before {
-    content: '';
+    content: "";
     background: transparent url(../public/images/title-fx.svg) no-repeat 0px 0px;
     width: 262px;
     height: 119px;
