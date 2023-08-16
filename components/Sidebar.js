@@ -1,34 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 
 // components/Sidebar.js
 function Sidebar() {
   const titles = ["design", "code", "direct", "write"];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [changing, setChanging] = useState(false);
+  const [isEntering, setIsEntering] = useState(true);
+
+  const titleRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setChanging(true); // Start the exit transition
-    }, 3000); // Change title every 3 seconds
+      setIsEntering((prev) => !prev); // Toggle between entering and exiting
+    }, 5000); // 5 seconds delay
+  
     return () => clearInterval(interval);
   }, []);
+
+  const handleExited = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
+    setIsEntering(true); // Start the entrance animation for the next word
+  };
 
   return (
     <div className="sidebar">
       <div className="sidebar-content">
-        <p className="intro-line">Hello, I’m WILL and I</p>
+        <p className="intro-line">Hello, I’m Will and I</p>
         <CSSTransition
-          in={!changing}
+          in={isEntering}
           timeout={500}
+          nodeRef={titleRef}
           classNames="slide-up"
-          onExited={() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
-            setChanging(false); // Reset to false after the transition to start the enter transition
-          }}
+          onExited={handleExited}
         >
-          <h1 key={titles[currentIndex]} className="sidebar-title">
+          <h1 style={{ position: "relative" }} ref={titleRef} key={titles[currentIndex]} className="sidebar-title">
             {titles[currentIndex]}
+            <span className="title-shadow">{titles[currentIndex]}</span>
           </h1>
         </CSSTransition>
         <ul className="job-title-container">

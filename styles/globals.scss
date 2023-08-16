@@ -46,7 +46,7 @@ body {
     content: "";
     height: 100%;
     width: 1px;
-    background: linear-gradient(90deg, #6663ff 0%, #ed2290 100%);
+    background: linear-gradient(180deg, #6663ff 0%, #ed2290 100%);
     display: block;
     position: absolute;
     top: 0;
@@ -55,44 +55,51 @@ body {
   .sidebar-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    .intro-line {
+      text-align: center;
+      position: relative;
+      top: 16px;
+    }
     .sidebar-title {
       font-size: 90px;
-      // animation: fadeIn 1.5s forwards;
       text-align: center;
+      z-index: 20;
+      position: relative;
+      display: block;
     }
   }
 }
 
-.slide-up-enter,
-.slide-up-exit-active {
+.slide-up-enter{
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(10%);
 }
 
-.slide-up-enter-active,
+.slide-up-enter-done {
+  opacity: 1;
+}
+
+.slide-up-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* Exit transition (current item fading out) */
+.slide-up-exit,
 .slide-up-exit-done {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 500ms, transform 500ms; /* Adjust these as you see fit */
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.slide-up-exit-active {
+  opacity: 0;
+  transform: translateY(-20%); /* Adjust for a slight upward shift */
+  transition: opacity 500ms, transform 500ms;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 .intro-line {
   font-size: 16px;
@@ -146,6 +153,28 @@ h1 {
   background: #0e0e0e;
   overflow: hidden;
   padding: 16px;
+  h2 {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  .post-card--desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin: 0.5em 0 2em 0;
+  }
+  .post-card__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold;
+    ul {
+      color: #606060;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+    }
+  }
 }
 
 .post-container {
@@ -161,7 +190,7 @@ h1 {
   font-size: 12px;
   text-transform: uppercase;
   border: 1px solid #fff;
-  padding: 0.5em 1em;
+  padding: 1em;
 }
 
 .btn--primary {
@@ -236,5 +265,41 @@ h1 {
     font-style: normal;
     font-weight: 300;
     text-align: center;
+  }
+}
+
+
+.title-shadow {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6663FF;
+  position: absolute;
+  left: 10px;
+  right: 0px;
+  top: 10px;
+  z-index: -1;
+  display: block;
+  &:before {
+    content: '';
+    background: transparent url(../public/images/title-fx.svg) no-repeat 0px 0px;
+    width: 262px;
+    height: 119px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    right: 0px;
+    top: 10px;
+    animation: growTall 1s ease-out;
+    transform-origin: center;
+  }
+}
+
+@keyframes growTall {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 119px;
   }
 }
