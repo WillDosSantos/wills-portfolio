@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import Link from "next/link";
+import Image from "next/image";
 
 // components/Sidebar.js
 function Sidebar() {
@@ -46,20 +47,69 @@ function Sidebar() {
         </CSSTransition>
         <ul className="job-title-container">
           <li>
-            <span>icon</span>
+            <a href="https://www.gogopool.com">
+              <Image
+                src="../images/icons/logo-ggp.svg"
+                width={24}
+                height={24}
+                alt="GoGoPool Logo"
+              />
+            </a>
             <span className="job-title">Creative Director</span>
           </li>
           <li>
-            <span>icon</span>
+            <a href="https://www.readyfive.io">
+              <Image
+                src="../images/icons/logo-rf.svg"
+                width={24}
+                height={24}
+                alt="ReadyFive Logo"
+              />
+            </a>
             <span className="job-title">Founding Designer</span>
           </li>
         </ul>
-        <Link style={{ marginTop: "2em" }} className="btn btn--outline btn--primary" href="/work-history">
-            Past work
+        <Link
+          style={{ marginTop: "2em" }}
+          className="btn btn--outline btn--primary btn-icon"
+          href="/work-history"
+        >
+          <Image
+            src="../images/icons/icon-paper.svg"
+            width={15}
+            height={16}
+            alt="twitter icon"
+          ></Image>
+          Past work
         </Link>{" "}
         {/* This could be a modal or a link */}
       </div>
-      {/* Add more content here */}
+      <div className="sidebar-footer">
+        <a hre="https://twitter.com/w_g_teller">
+          <Image
+            src="../images/icons/icon-twitter.svg"
+            width={17}
+            height={15}
+            alt="twitter icon"
+          ></Image>
+        </a>
+        <a hre="https://twitter.com/w_g_teller">
+          <Image
+            src="../images/icons/icon-discord.svg"
+            width={18}
+            height={15}
+            alt="discord icon"
+          ></Image>
+        </a>
+        <a href="https://dribbble.com/willds">
+          <Image
+            src="../images/icons/icon-dribbble.svg"
+            width={19}
+            height={19}
+            alt="dribbble icon"
+          ></Image>
+        </a>
+      </div>
     </div>
   );
 }

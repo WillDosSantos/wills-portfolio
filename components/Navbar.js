@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // components/Navbar.js
 function Navbar({ onTagSelect }) {
@@ -9,7 +10,9 @@ function Navbar({ onTagSelect }) {
 
   const handleTagClick = (tag) => {
     setActiveTag(tag);
-    onTagSelect(tag === "All" ? null : tag);
+    if (onTagSelect) {
+      onTagSelect(tag === "All" ? null : tag);
+    }
   };
 
   return (
@@ -33,7 +36,10 @@ function Navbar({ onTagSelect }) {
           </li>
         ))}
       </ul>
-      <button className="btn btn--outline">Connect</button>{" "}
+      <button className="btn btn--outline btn-icon">
+        <Image src="../images/icons/icon-envelope.svg" alt="envelope icon" width={14} height={11}/>
+        Connect
+        </button>{" "}
       {/* This could be a modal or a link */}
     </nav>
   );

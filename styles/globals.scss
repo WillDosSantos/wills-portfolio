@@ -70,6 +70,18 @@ body {
       display: block;
     }
   }
+  .sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .slide-up-enter {
@@ -227,11 +239,18 @@ h1 {
   color: #6663ff;
 }
 
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .job-title-container {
   li {
     display: flex;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 1em;
     &:first-child {
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
