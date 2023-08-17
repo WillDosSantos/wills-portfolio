@@ -325,10 +325,10 @@ h1 {
 
 @keyframes growTall {
   0% {
-    height: 0px;
+    height: 0;
   }
   100% {
-    height: 119px;
+    height: 100%;
   }
 }
 
@@ -350,11 +350,17 @@ h1 {
     left: 0;
     right: 0;
     margin: 0 auto;
+    top: 0;
+    animation: growTall 4s ease-out;
+    z-index: -1;
   }
   .work-card {
     display: flex;
-    margin: 0 auto;
-    max-width: 780px;
+    margin: 8em auto 0 auto;
+    max-width: 500px;
+    position: relative;
+    gap: 16px;
+    justify-content: space-between;
   }
   .work-card-date {
     color: rgba(255,255,255,0.4);
@@ -377,6 +383,25 @@ h1 {
       margin-top: 1em;
       color: rgba(255, 255, 255, 0.50);
       line-height: 22px;
+    }
+  }
+
+  .work-card--logo {
+    position: relative;
+    z-index: 4;
+  }
+
+  .work-card--right {
+    flex-direction: row-reverse;
+    right: 120px;
+    .work-card--logo {
+      right: 14px;
+    }
+  }
+  .work-card--left {
+    left: 120px;
+    .work-card--logo {
+      left: 14px;
     }
   }
 }

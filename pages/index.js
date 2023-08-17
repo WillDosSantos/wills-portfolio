@@ -1,20 +1,17 @@
 import { useState } from "react";
 
 import { getSortedPostsData } from "../lib/posts";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
+import Layout  from "../components/Layout";
 import HeaderQuote from "../components/HeaderQuote";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Home({ allPostsData }) {
-  const [selectedTag, setSelectedTag] = useState(null);
+  const [selectedTag, setSelectedTag] = useState(null); 
+
   return (
-    <div className="container">
-      <Sidebar />
-      <main>
-        <Navbar onTagSelect={(tag) => setSelectedTag(tag)} />
+    <Layout selectedTag={selectedTag} onTagSelect={setSelectedTag}>
         <HeaderQuote />
         <div data-aos="fade-up" className="post-container">
           {allPostsData
@@ -53,8 +50,7 @@ export default function Home({ allPostsData }) {
               </motion.div>
             ))}
         </div>
-      </main>
-    </div>
+    </Layout>
   );
 }
 
