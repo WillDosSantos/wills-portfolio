@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { getSortedPostsData } from "../lib/posts";
 import Layout  from "../components/Layout";
@@ -7,13 +7,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+import AOS from "aos";
+
 export default function Home({ allPostsData }) {
   const [selectedTag, setSelectedTag] = useState(null); 
+
+  useEffect(() => {
+    // This will refresh the AOS animations every time selectedTag changes.
+    AOS.refresh();
+  }, [selectedTag]);
 
   return (
     <Layout selectedTag={selectedTag} onTagSelect={setSelectedTag}>
         <HeaderQuote />
-        <div data-aos="fade-up" className="post-container">
+        <div data-aos="fade-up" className="post-container" key={selectedTag}>
           {allPostsData
             .filter((post) => !selectedTag || post.tags.includes(selectedTag))
             .map(({ id, title, date, tags, featureImage, description }) => (

@@ -6,15 +6,18 @@ import Image from 'next/image';
 
 export default function Post({ postData }) {
   const [selectedTag, setSelectedTag] = useState(null);
+  
   return (
     <div className="container">
       <Sidebar />
       <main>
         <Navbar onTagSelect={(tag) => setSelectedTag(tag)} />
-        <div className="blog-post-container">
+        <div data-aos="fade-up" className="blog-post-container">
           <h2>{postData.title}</h2>
-          <p>{postData.date}</p>
-          <p>{postData.tags}</p>
+          <div className="blog-post-details">
+            <p>{postData.tags}</p>
+            <p>{postData.date}</p>
+          </div>
           {postData.featureImage && (
             <Image
               src={postData.featureImage}

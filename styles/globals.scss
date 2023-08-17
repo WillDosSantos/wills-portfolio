@@ -269,6 +269,9 @@ h1 {
 
 .blog-post-container {
   padding: 2em;
+  img {
+    margin: 1em 0 3em 0;
+  }
 }
 
 .header-quote {
@@ -423,4 +426,16 @@ h1 {
       left: 14px;
     }
   }
+}
+
+.blog-post-details {
+  color: rgba(255, 255, 255, 0.50);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding: 1em 0 3em 0;
 }
