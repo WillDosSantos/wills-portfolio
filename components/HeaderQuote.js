@@ -1,10 +1,10 @@
 
 // components/HeaderQuote.js
-function HeaderQuote() {
+function HeaderQuote({ quote, author }) {
   return (
     <div className="header-quote">
-        <h2>A person who never made a mistake never tried anything new.</h2>
-        <span style={{marginTop: '1em'}} className="speaker">Albert Einstein</span>
+        <h2>{quote}</h2>
+        <span style={{marginTop: '1em'}} className="speaker">{author}</span>
     </div>
   );
 }

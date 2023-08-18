@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { getAllPostIds, getPostData } from "../../lib/posts";
+import { formatDate } from "../../lib/dateUtils";
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import Image from 'next/image';
@@ -16,7 +17,7 @@ export default function Post({ postData }) {
           <h2>{postData.title}</h2>
           <div className="blog-post-details">
             <p>{postData.tags}</p>
-            <p>{postData.date}</p>
+            <p>{formatDate(postData.date)}</p>
           </div>
           {postData.featureImage && (
             <Image
