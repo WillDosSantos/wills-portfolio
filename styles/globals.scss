@@ -276,9 +276,19 @@ h1 {
 }
 
 .blog-post-container {
-  padding: 2em;
+  padding: 2em 4em;
   img {
     margin: 1em 0 3em 0;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+  p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    line-height: 32px;
   }
 }
 
@@ -425,7 +435,7 @@ h1 {
     flex-direction: row-reverse;
     right: 120px;
     .work-card--logo {
-      right: 12px;
+      right: 15px;
     }
   }
   .work-card--left {

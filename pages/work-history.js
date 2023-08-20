@@ -35,6 +35,23 @@ const WorkHistory = () => {
               </p>
             </div>
           </div>
+          <div data-aos="fade-up" className="work-card work-card--left">
+            <div className="work-card-date">APR 2019</div>
+            <div className="work-card--logo">
+              <Image
+                src="../images/icons/logo-rf.svg"
+                width={24}
+                height={23}
+                alt="Ready Five Logo"
+              />
+            </div>
+            <div className="work-card-main">
+              <h3>Founding Designer Role</h3>
+              <p>
+                Was drafted as a contract designer by some of the talented developers that I know and decided to join the team as a founding designer. Doing everything from the blog posts, marketing site, mobile and web apps, and pretty muh everything else.
+              </p>
+            </div>
+          </div>
           <div data-aos="fade-up" className="work-card work-card--right">
             <div className="work-card-date">NOV 2022</div>
             <div className="work-card--logo">
@@ -56,7 +73,7 @@ const WorkHistory = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="work-card work-card--left">
-            <div className="work-card-date">OCT 2022</div>
+            <div className="work-card-date">SEPT 2018</div>
             <div className="work-card--logo">
               <Image
                 src="../images/icons/logo-pc.svg"
@@ -66,17 +83,14 @@ const WorkHistory = () => {
               />
             </div>
             <div className="work-card-main">
-              <h3>Career Update: Last Days at Planning Center</h3>
+              <h3>Career Update: Lead Mobile Design</h3>
               <p>
-                Are you looking for a new job opportunity? Consider making the
-                switch from your current company to a new one! With a new job,
-                you can gain new experiences, learn new skills, and take your
-                career to the next level.
+                While still maintaining the front end design on Planning Center People, I've decided to dive even further into designing for our mobile apps. Working with both the Androind and iOS teams is great and there are a lot of lessons to learn.
               </p>
             </div>
           </div>
           <div data-aos="fade-up" className="work-card work-card--right">
-            <div className="work-card-date">JAN 2020</div>
+            <div className="work-card-date">JUL 2016</div>
             <div className="work-card--logo">
               <Image
                 src="../images/icons/logo-pc.svg"
@@ -86,12 +100,9 @@ const WorkHistory = () => {
               />
             </div>
             <div className="work-card-main">
-              <h3>Career Update: Lead Marketing Designer</h3>
+              <h3>Career Update: Senior Product Designer</h3>
               <p>
-                Are you looking for a new job opportunity? Consider making the
-                switch from your current company to a new one! With a new job,
-                you can gain new experiences, learn new skills, and take your
-                career to the next level.
+                Started working working as a Senior Product Designer on the Planning Center People product. After a few years bouncing around on multiple design and video projects, I'm excited to plant my feet in this role and work with this amazing team.
               </p>
             </div>
           </div>
