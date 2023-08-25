@@ -1,26 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 // components/Navbar.js
 function Navbar({ onTagSelect, isHomePage }) {
   const tags = ["case studies", "apps & games", "illustration", "motion"]; // Add more tags as needed
-  const [isOpen, setIsOpen] = useState(false);
-  const sideNavRef = useRef(null);
-
-  const closeSideNav = (e) => {
-    if (sideNavRef.current && !sideNavRef.current.contains(e.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", closeSideNav);
-
-    return () => {
-      document.removeEventListener("mousedown", closeSideNav);
-    };
-  }, []);
 
   const [activeTag, setActiveTag] = useState("All"); // Initially, 'All' is active
 
@@ -33,17 +17,6 @@ function Navbar({ onTagSelect, isHomePage }) {
 
   return (
     <nav className="navbar">
-      <button onClick={() => setIsOpen(!isOpen)}>☰</button>
-      <div
-        ref={sideNavRef}
-        className={`mobile-side-nav ${isOpen ? "open" : ""}`}
-      >
-        {/* Your nav links go here */}
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        {/* ... */}
-      </div>
       {isHomePage ? (
         <ul>
           <Link href="/">

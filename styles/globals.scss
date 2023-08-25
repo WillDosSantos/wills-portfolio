@@ -42,6 +42,7 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
+  margin-top: 6em;
   &::after {
     content: "";
     height: 100%;
@@ -123,7 +124,7 @@ body {
 }
 
 .navbar {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 48px;
   width: 100%;
@@ -398,7 +399,7 @@ h1 {
   .work-card {
     display: flex;
     margin: 8em auto 0 auto;
-    max-width: 500px;
+    max-width: 540px;
     position: relative;
     gap: 16px;
     justify-content: space-between;
@@ -409,6 +410,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 3.6px;
     text-transform: uppercase;
+    width: 120px;
   }
   .work-card-main {
     border-radius: 16px;
@@ -436,13 +438,13 @@ h1 {
     flex-direction: row-reverse;
     right: 120px;
     .work-card--logo {
-      right: 15px;
+      right: -6px;
     }
   }
   .work-card--left {
     left: 120px;
     .work-card--logo {
-      left: 14px;
+      left: -5px;
     }
   }
 }
@@ -473,25 +475,41 @@ h1 {
   transition: 0.3s;
   overflow-y: auto;
   padding-top: 20px;
+  z-index: 90;
 }
 
 .mobile-side-nav a {
   display: block;
-  padding: 10px 20px;
+  padding: 20px;
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .mobile-side-nav a:hover {
-  background: #555;
+  background: rgba(255,255,255,0.1);
 }
 
 .mobile-side-nav.open {
   left: 0; /* This makes the side-nav visible */
 }
 
+.mobile-menu-button {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 32px;
+  z-index: 10;
+}
+
 /* For screens larger than 768px */
 @media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
   .mobile-side-nav {
       left: 0;
       width: auto;
@@ -507,6 +525,7 @@ h1 {
     position: fixed;
     width: 500px;
     display: flex;
+    margin-top: 0;
   }
   .sidebar-footer {
     display: flex;
