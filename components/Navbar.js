@@ -28,13 +28,14 @@ function Navbar({ onTagSelect, isHomePage }) {
             </li>
           </Link>
           {tags.map((tag) => (
-            <li
-              key={tag}
-              onClick={() => handleTagClick(tag)}
-              className={activeTag === tag ? "active" : ""}
-            >
-              {tag}
-            </li>
+            <Link href={`/${tag.replace(" ", "-").toLowerCase()}`} key={tag}>
+              <li
+                onClick={() => handleTagClick(tag)}
+                className={activeTag === tag ? "active" : ""}
+              >
+                {tag}
+              </li>
+            </Link>
           ))}
         </ul>
       ) : (

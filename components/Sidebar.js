@@ -80,7 +80,7 @@ function Sidebar() {
               height={16}
               alt="twitter icon"
             ></Image>
-            Past work
+            Work History
           </Link>
         {/* This could be a modal or a link */}
       </div>

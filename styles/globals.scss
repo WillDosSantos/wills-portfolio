@@ -506,7 +506,7 @@ h1 {
 }
 
 /* For screens larger than 768px */
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
   .mobile-menu-button {
     display: none;
   }
@@ -526,10 +526,11 @@ h1 {
     width: 500px;
     display: flex;
     margin-top: 0;
+    .sidebar-footer {
+      display: flex;
+    }
   }
-  .sidebar-footer {
-    display: flex;
-  }
+ 
   .navbar {
     display: flex;
   }
@@ -544,7 +545,15 @@ h1 {
       display: flex;
     }
   }
+  main {
+    .post-container {
+      grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    }
+  }
+}
+
+@media (min-width: 728px) {
   .post-container {
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
   }
 }
