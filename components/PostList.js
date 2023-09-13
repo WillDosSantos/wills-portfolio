@@ -4,6 +4,14 @@ import Image from "next/image";
 import { formatDate } from "../lib/dateUtils";
 
 export default function PostList({ posts }) {
+
+  function truncateString(str, num) {
+    if (str.length <= num) {
+      return str;
+    }
+    return str.slice(0, num) + "...";
+  }
+  
   return (
     <div data-aos="fade-up" className="post-container">
       {posts.map(({ id, title, date, tags, featureImage, description }) => (
@@ -28,7 +36,7 @@ export default function PostList({ posts }) {
               </div>
             )}
             <h2>{title}</h2>
-            <p className="post-card--desc">{description}</p>
+            <p className="post-card--desc">{truncateString(description, 100)}</p>
             <div className="post-card__footer">
               <ul>
                 {tags.map((tag) => (

@@ -194,6 +194,12 @@ h1 {
   background: #0e0e0e;
   overflow: hidden;
   padding: 16px;
+  a {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   h2 {
     font-weight: bold;
     margin-top: 1em;
@@ -323,7 +329,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1024px;
   .post-feature-image {
     width: 100%;
   }
@@ -336,6 +342,9 @@ h1 {
     font-style: normal;
     font-weight: 300;
     text-align: center;
+  }
+  h4 {
+    margin: 3em 0 0.5em 0;
   }
 }
 

@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import AOS from "aos";
 import { useRouter } from 'next/router';
 import { getSortedPostsData } from '../lib/posts';
 import Layout from '../components/Layout';
@@ -8,6 +10,13 @@ export default function TagPage({ allPostsData }) {
   const { tagName } = router.query;
   const tagNameFromURL = tagName.replace("-", " ");
   const filteredPosts = allPostsData.filter(post => post.tags.includes(tagNameFromURL));
+
+  const [selectedTag, setSelectedTag] = useState(null);
+
+  useEffect(() => {
+    // This will refresh the AOS animations every time selectedTag changes.
+    AOS.refresh();
+  }, [selectedTag]);
 
   return (
     <Layout isHomePage={true}>
