@@ -1,7 +1,10 @@
+import { useState, useEffect } from "react";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { formatDate } from "../lib/dateUtils";
+import AOS from "aos";
 
 export default function PostList({ posts }) {
 
@@ -11,6 +14,13 @@ export default function PostList({ posts }) {
     }
     return str.slice(0, num) + "...";
   }
+  
+  const [selectedTag, setSelectedTag] = useState(null);
+
+  useEffect(() => {
+    // This will refresh the AOS animations every time selectedTag changes.
+    AOS.refresh();
+  }, [selectedTag]);
   
   return (
     <div data-aos="fade-up" className="post-container">
