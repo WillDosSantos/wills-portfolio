@@ -36,3 +36,6 @@ Moving forward, I am committed to the growth and development of Punk Rock Robots
 
 ![HOM3L355](/images/posts/punk-rock-robots/model-102.png)
 In conclusion, my journey into the world of NFTs has been a rollercoaster of ups and downs. Despite the challenges and setbacks, I remain determined to navigate this exciting landscape and contribute to its growth and evolution. Stay tuned for the next chapter in the Punk Rock Robots saga.
+
+
+<img src="/images/posts/punk-rock-robots/model-102.png" alt="alt_text" class="your-custom-class"/>

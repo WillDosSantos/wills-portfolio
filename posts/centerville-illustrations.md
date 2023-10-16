@@ -2,7 +2,7 @@
 title: 'Personality and Brand for Centerville'
 date: '2022-10-24'
 tags: ['illustration']
-featureImage: "/images/pc-illustrations/feature-image.png"
+featureImage: "/images/pc-illustrations/jerome.gif"
 description: "Reflecting on my time at Planning Center, I am reminded of the transformative journey I embarked on while creating an asset library for illustrations. This endeavor brought about a paradigm shift in our design process, elevating our brand's visual language and fostering deeper connections with our audience."
 ---
 

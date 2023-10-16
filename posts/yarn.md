@@ -14,9 +14,6 @@ The game is based on the idea of toxic waste contaminating the river, which then
 #### Introduction:
 In the realm of mobile gaming, there exists a plethora of captivating and imaginative experiences that transport players to new worlds. However, it takes a truly exceptional concept to leave a lasting impression. Today, we delve into the story of an ambitious game development project that aimed to captivate audiences with its unique premise, challenging gameplay, and visually stunning design. Join me as we explore the journey behind the creation of a game that not only entertained but also sparked a desire for further innovation.
 
-![Old Layout](/images/posts/yarn/old-layout.png)
-![Old Layout](/images/posts/yarn/old-layout.png)
-
 #### The Toxic Spill: A Catalyst for Adventure:
 At the heart of this enchanting game lies a tale of a catastrophic event: a toxic waste spill that contaminated the river. The repercussions of this unfortunate incident took an unexpected turn when the tainted fish were used in the production of cat food. As unsuspecting felines consumed this contaminated sustenance, a transformation occurred, turning them into little zombie cats. This captivating narrative served as the foundation for the game's enthralling gameplay.
 
