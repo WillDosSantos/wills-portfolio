@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // components/Navbar.js
-function Navbar({ onTagSelect, isHomePage }) {
+function Navbar({ onTagSelect, isHomePage, onOpenModal }) {
   const tags = ["case studies", "apps & games", "illustration", "motion"]; // Add more tags as needed
 
   const [activeTag, setActiveTag] = useState("All"); // Initially, 'All' is active
@@ -46,7 +46,7 @@ function Navbar({ onTagSelect, isHomePage }) {
           </Link>
         </ul>
       )}
-      <button className="btn btn--outline btn-icon">
+      <button onClick={onOpenModal} className="btn btn--outline btn-icon">
         <Image
           src="../images/icons/icon-envelope.svg"
           alt="envelope icon"
