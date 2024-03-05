@@ -1,9 +1,9 @@
 ---
-title: 'A fond farwell'
+title: 'A Fond Farewell'
 date: '2022-01-04'
 tags: ['motion']
 featureImage: "/images/leaving-planning-center/feature-image.png"
-description: "Time to make some changes ;)"
+description: "I'm humble enough to know I'm not better than anyone else. But I'm wise enough to know that I'm different than the rest."
 ---
 
 ### Summary
