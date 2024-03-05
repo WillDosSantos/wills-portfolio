@@ -1,5 +1,5 @@
 ---
-title: 'Saying Goodbye to Planning Center'
+title: 'A fond farwell'
 date: '2022-01-04'
 tags: ['motion']
 featureImage: "/images/leaving-planning-center/feature-image.png"
@@ -10,23 +10,28 @@ description: "Time to make some changes ;)"
 
 It's been 11 years, and what a journey it has been. Now it's time for the next one. I've gained a wide variety of new skills and sharpened old ones. For some time now, I've had the desire to lead a team and have gotten some experience in that arena with certain groups at Planning Center. But 11 years is a long time, and I want to see what else is out there and what else I can accomplish.
 
-#### The Dream
-When I was a kid my parents took me to see this movie, "Antitrust". I have no idea why we picked to see that as a family but we did. I didn't really know what to expect but knew it was about computers. The story is centered around this young guy named Milo. He's a top shot programmer working with his buddies in a startup they call "SkullBox" - probably getting the spelling wrong here but you get the idea.
+#### The Goal
+I remember when I was a kid I went Antitrust the movie. The story was about a young software programmer given the opportunity of a life time by the CEO of a tech company who, as it turned out, had some sinister intentions. But, the thing that stuck out to me even as a kid, was how cool the working environment of the offices of Nurve were. I remember thinking, "One day, I'll work at a place like that." It was a goal that eventually faded in high school, but then came back around again in my early years at college.
 
-They are on the verge of getting some good ol' VC funding when Milo is offered a job by mega-corp. Nurve CEO Gary Winston, who plays a sort of Bill Gates mixed with Steve Jobs kind of character.
-
-Milo accepts, and his world is changed seemingly overnight. He's flown out to the corporate office in Portland, gets setup at an awesome looking office (picture Google before it was Google) and is taken under the wing of the CEO. Pretty awesome, right?
-
-Eventually, Milo finds out that there is something more sinister afoot and the movie takes some twists and turns. But the thing that caught my attention was that first act. The badass office. I remember thinking to myself, "Wow, I want to work at a place as cool as that." I started to have this vision in the back of my mind of what that reality could look like. I didn't know that almost a decade later, it would become a reality for me. 
-
-#### The Reality
+#### Planning Center
 
 I saw the post in 2011 for Front End Designer at Planning Center. I wasn't sure about the details of the job as there was a fair amount that I had never done before. But I decided to give it a go. I'm not going to lie, when I got a reply back from Jeff, the CEO, I was a bit surprised. I was extremely motivated but scared. I knew I could do the design work no problem. I was pretty confident in my HTML and CSS but my JS....that was lacking.
 
-So, I didn't respond back. I just assumed I wasn't good enough. But good ol' Jeff, he followed up with me a day or two later asking if I was going to turn in his code challenge. I thought about it and decided to give it a go. I responded back with some bs about how the email went into my spam folder. Not my proudest moment but I own it and I'm thankful he did reach back out.
+At first, I ignored his email. Yup, just straight up ignored it. I thought there was no way I would be able to do that job and why even waste his or my time. Then, he followed up asking if I still planned on applying. That email changed my life. I decided to give it a whirl. I gave him a bullshit excuse "oh sorry didn't see the first email. Must have went to spam." I stayed up all night working on the task and sent it off at around 3:00am. I remember turning to my girlfriend, now wife, saying "Welp, there's no chance I'll get that gig."
 
-I completed the code challege in a couple hours and sent it off. I thought that there was no way that they would look at the code challenge and approve me for a follow up. Sure enough, they did.
+The next day, I got a reply back. I was shocked. Jeff asked if I could come down for a visit to their offices in Carlsbad and meet with the lead designer. After my nerves settled, I replied back with an affirmative yes.
 
-Jeff followed up with me the next day asking if I wanted to come in for an in-person interview that Friday. I couldn't believe it. I took the two and half hour drive down to San Diego from the high desert leaving at 5 a.m. I arrived to a very unassuming office center. The exteriors were all the same and there wasn't a company name on the building for the address I was given. I walked up, rang the bell, and Jeff answered.
+I left early the follow Friday morning at 5:00am and made the drive down to Carlsbad from the high desert. Jeff answered the door and gave me a tour of the office. He was a super nice guy and the office space was unbelievable. It was even better than what I saw in the movie years ago. The interview was one of the longest, most fun, and strangest interviews I've ever done. I was probably the biggest contributor to the strange part.
 
-"Hey, I'm Jeff! Come on in!" he greeted me with a smile and warm handshake. He showed me around the building and gave me a tour. The interior design was amazing and I couldn't believe it. 
+When it was over, I felt as if I already had the job. But, it wasn't for sure. And I thought there was always a chance I wouldn't get it. Then, two days later, Jeff called me telling me I got the job. I was completely over the moon.
+
+Little did I know, how much Jeff Berg would have an impact in my life. Because of him, and all the folks at Planning Center, I have experienced such wonderful and amazing things. Things that most people will never get the chance to experience. I worked my butt off there, and I know Jeff and the company recognized that. It was truly unforgetable. 
+
+Now, 11 years later to the date that I joined, it's time for me to try something else. With the skills and knowledge that I gained at Planning Center, I feel like it's time for me to share that with other fast upcoming startups. Sharing my knowledge and experience, seeing people grow, and learning new things has become such a passion of mine; I owe so much to that wonderful place. 
+
+I will never forget, the man that opened the door for me that day. The chance he gave to some kid from the high desert. It really has been such a priviledge to work there. Here's to you all. May your journey in life be filled with the same joy I have been able to experience thus far. 
+
+Thank you Planning Center and thank you, Jeff Berg.
+
+Will-
+
