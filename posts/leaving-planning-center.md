@@ -1,7 +1,7 @@
 ---
 title: 'A Fond Farewell'
 date: '2022-01-04'
-tags: ['motion']
+tags: ['case studies']
 featureImage: "/images/leaving-planning-center/feature-image.png"
 description: "I'm humble enough to know I'm not better than anyone else. But I'm wise enough to know that I'm different than the rest."
 ---
@@ -26,6 +26,8 @@ I left early the follow Friday morning at 5:00am and made the drive down to Carl
 When it was over, I felt as if I already had the job. But, it wasn't for sure. And I thought there was always a chance I wouldn't get it. Then, two days later, Jeff called me telling me I got the job. I was completely over the moon.
 
 Little did I know, how much Jeff Berg would have an impact in my life. Because of him, and all the folks at Planning Center, I have experienced such wonderful and amazing things. Things that most people will never get the chance to experience. I worked my butt off there, and I know Jeff and the company recognized that. It was truly unforgetable. 
+
+Planning Center allowed me to utilize the full arsenal of design skills I had to offer. I started on the marketing site doing Web Design and quickly transitioned to product and UI design thereafter. I was able to storyboard, direct, and edit several commercials that included motion graphics and became the lead illustrator for the company. Being the second design hire also allowed me to participate in over 30 hires which ranged from design, developers, support, and office administration. There was no shortage of learning or doing. We all wore several hats and each one of us took the job seriously.
 
 Now, 11 years later to the date that I joined, it's time for me to try something else. With the skills and knowledge that I gained at Planning Center, I feel like it's time for me to share that with other fast upcoming startups. Sharing my knowledge and experience, seeing people grow, and learning new things has become such a passion of mine; I owe so much to that wonderful place. 
 

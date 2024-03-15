@@ -28,7 +28,19 @@ We also made the CTA a bit more pronounced for creating a Minipool in the sideba
 
 Before, you had to use a third party in order to obtain a Node ID or run the node yourself. With this approach, we did all that in the background so our customers don't have to think about it. It's out of sight and out of mind. Unless of course they are curious about what is happening behind the hood in which case we will cover that here shortly.
 
-![Create Minipool](/images/posts/minipools-2.0/create-minipool.png)
+![Create Minipool](/images/posts/minipools-2.0/create-minipool.png
+![Breakdown](/images/posts/minipools-2.0/mp-details.png)
+![Price](/images/posts/minipools-2.0/mp-price.png)
+![Success](/images/posts/minipools-2.0/success.png)
 
 
+### Simple on the surface
 
+We really wanted to achieve a simple approach to creating a Minipool and validating for Avalanche. This is incredibly challenging from multiple perspectives. After implementing this and featuring it in our first keynote, we saw a 10x increase in our token price in addtion almost 100+ Minipools launched, and the number has only increased from there.
+
+![Figma](/images/posts/minipools-2.0/figma-shot-1.png)
+![Figma 2](/images/posts/minipools-2.0/figma-shot-2.png)
+
+
+### Validate in one-click
+If you want to try out the one-click Minipool experience and start validating for Avalance for only 1100 AVAX, then you can head over to [https://app.gogopool.com/create-minipool/](https://app.gogopool.com/create-minipool/)
