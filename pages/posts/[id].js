@@ -1,18 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { formatDate } from "../../lib/dateUtils";
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import Image from 'next/image';
+import ContactModal from "../../components/ContactModal";
 
 export default function Post({ postData }) {
   const [selectedTag, setSelectedTag] = useState(null);
   
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  // Function to handle opening the modal
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  // Function to handle closing the modal
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  // Handle adding/removing the modal-open class to the body element
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [isModalOpen]);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    // Now you'd probably want to format this data and send it to your backend or third-party service
+    // ...
+
+    // Close the modal
+    setModalOpen(false);
+  };
+  
   return (
     <div className="container">
+      <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <Sidebar />
       <main>
-        <Navbar onTagSelect={(tag) => setSelectedTag(tag)} />
+        <Navbar onTagSelect={(tag) => setSelectedTag(tag)} onOpenModal={handleOpenModal} />
         <div data-aos="fade-up" className="blog-post-container">
           <h2>{postData.title}</h2>
           <div className="blog-post-details">

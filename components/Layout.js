@@ -1,6 +1,6 @@
 // components/Layout.js
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import MobileNavbar from "./MobileNavbar";
@@ -15,6 +15,20 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
     setModalOpen(true);
   };
 
+  // Function to handle closing the modal
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  // Handle adding/removing the modal-open class to the body element
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [isModalOpen]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -27,10 +41,10 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
  
   return (
     <div className="container">
+      <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <MobileNavbar/>
       <Sidebar />
       <main>
-        <ContactModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
         <Navbar onTagSelect={onTagSelect} isHomePage={isHomePage} onOpenModal={handleOpenModal} />
         {children} {/* This will render the content of the page */}
       </main>

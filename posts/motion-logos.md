@@ -1,7 +1,7 @@
 ---
 title: 'Motion Logos'
 date: '2022-08-28'
-tags: ['case studies']
+tags: ['motion']
 featureImage: "/images/posts/motion-logos/my-planning-center.gif"
 description: "A collection of logos brought to life with the power of motion"
 ---

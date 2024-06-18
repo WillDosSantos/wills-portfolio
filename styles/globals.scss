@@ -222,7 +222,7 @@ h1 {
     }
   }
   .img-container {
-    height: 333px;
+    height: 170px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -289,7 +289,7 @@ h1 {
 }
 
 .blog-post-container {
-  padding: 2em 4em;
+  padding: 2em 4em 12em 4em;
   img {
     margin: 3em 0 3em 0;
   }
@@ -302,6 +302,13 @@ h1 {
     font-size: 16px;
     color: rgba(255,255,255,0.6);
     line-height: 32px;
+  }
+  a {
+    color: #6663ff;
+    text-decoration: underline;
+    &:hover {
+      color: #9d9bff;
+    }
   }
 }
 
@@ -570,11 +577,18 @@ h1 {
   .post-container {
     grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
   }
+
+  .img-container {
+    height: 333px;
+  }
 }
 
+body.modal-open {
+  overflow: hidden;
+}
 
 //Popup Modal
-.overlay {
+.modal-overlay {
   background-color: rgba(0,0,0,0.9);
   position: fixed;
   height: 100%;
@@ -591,5 +605,46 @@ h1 {
     box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     padding: 2em 4em;
+    width: 100%;
+    margin: 4em 0;
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+  }
+}
+
+.modal--header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0em;
+  p {
+    font-size: 2em;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  input, select{
+    background-color: rgba(255,255,255,0.1);
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  label {
+    color: rgba(255,255,255,0.3);
+    margin-top: 1.3em;
+  }
+  button {
+    margin: 2em 0;
+  }
+  .flex {
+    column-gap: 40px;
+  }
+  .col {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    row-gap: 20px;
   }
 }
