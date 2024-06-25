@@ -3,13 +3,19 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import { formatDate } from "../../lib/dateUtils";
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
-import Image from 'next/image';
+import Image from "next/image";
 import ContactModal from "../../components/ContactModal";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export default function Post({ postData }) {
   const [selectedTag, setSelectedTag] = useState(null);
-  
   const [isModalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    console.log(postData.content); // Log the Markdown content
+  }, [postData]);
 
   // Function to handle opening the modal
   const handleOpenModal = () => {
@@ -24,9 +30,9 @@ export default function Post({ postData }) {
   // Handle adding/removing the modal-open class to the body element
   useEffect(() => {
     if (isModalOpen) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
   }, [isModalOpen]);
 
@@ -39,13 +45,16 @@ export default function Post({ postData }) {
     // Close the modal
     setModalOpen(false);
   };
-  
+
   return (
     <div className="container">
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <Sidebar />
       <main>
-        <Navbar onTagSelect={(tag) => setSelectedTag(tag)} onOpenModal={handleOpenModal} />
+        <Navbar
+          onTagSelect={(tag) => setSelectedTag(tag)}
+          onOpenModal={handleOpenModal}
+        />
         <div data-aos="fade-up" className="blog-post-container">
           <h2>{postData.title}</h2>
           <div className="blog-post-details">
@@ -56,12 +65,17 @@ export default function Post({ postData }) {
             <Image
               src={postData.featureImage}
               alt={`Featured image for ${postData.title}`}
-              width={600} // or whatever dimensions you prefer
+              width={600}
               height={400}
               className="post-feature-image"
             />
           )}
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
+            {postData.content}
+          </ReactMarkdown>
         </div>
       </main>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: 'MultiSig Labs - Branding'
+title: 'MultiSig Labs - Branding & Site Design'
 date: '2023-10-16'
 tags: ['case studies']
 featureImage: "/images/posts/multisig-labs/feature-image.png"

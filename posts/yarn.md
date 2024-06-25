@@ -10,12 +10,23 @@ description: "This is a detailed description of my blog post. It contains many w
 ### Overview
 The game is based on the idea of toxic waste contaminating the river, which then ends up in cat food. When cats eat the contaminated fish, they turn into zombie cats. Players have to navigate through levels to eliminate the zombie cats. The first version of the game had a "cut the rope" style of gameplay, but it was not enjoyable. The team then tried a different approach inspired by the game King of Thieves, which made the gameplay more interesting and fun. The game was released with three areas and 30 levels in total, with in-app purchases for different outfits. Although it didn't perform well in the long run, it was initially well-received and still has a dedicated fan base. The creator hopes to revisit the game in the future.
 
+<div class="image-row">
+  <img src="/images/posts/yarn/level-2.png" alt="Level design concept for yarn game on mobile device" />
+  <img src="/images/posts/yarn/level-3.png" alt="Level design concept for yarn game on mobile device" />
+  <img src="/images/posts/yarn/level-4.png" alt="Level design concept for yarn game on mobile device" />
+</div>
 
 #### Introduction:
 In the realm of mobile gaming, there exists a plethora of captivating and imaginative experiences that transport players to new worlds. However, it takes a truly exceptional concept to leave a lasting impression. Today, we delve into the story of an ambitious game development project that aimed to captivate audiences with its unique premise, challenging gameplay, and visually stunning design. Join me as we explore the journey behind the creation of a game that not only entertained but also sparked a desire for further innovation.
 
 #### The Toxic Spill: A Catalyst for Adventure:
 At the heart of this enchanting game lies a tale of a catastrophic event: a toxic waste spill that contaminated the river. The repercussions of this unfortunate incident took an unexpected turn when the tainted fish were used in the production of cat food. As unsuspecting felines consumed this contaminated sustenance, a transformation occurred, turning them into little zombie cats. This captivating narrative served as the foundation for the game's enthralling gameplay.
+
+<div class="image-row">
+  <img src="/images/posts/yarn/level-5.png" alt="Level design concept for yarn game on mobile device" />
+  <img src="/images/posts/yarn/level-6.png" alt="Level design concept for yarn game on mobile device" />
+  <img src="/images/posts/yarn/level-7.png" alt="Level design concept for yarn game on mobile device" />
+</div>
 
 #### The Evolution of Gameplay:
 Like any creative endeavor, the development of this game involved numerous iterations and experiments. The initial concept explored a "cut the rope" style gameplay, where players would construct levels and guide a yarn ball character through various obstacles to eliminate the zombie cats. While visually pleasing, it became evident that this approach lacked the essential element of fun.

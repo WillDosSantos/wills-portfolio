@@ -222,7 +222,7 @@ h1 {
     }
   }
   .img-container {
-    height: 170px;
+    height: 320px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -310,6 +310,14 @@ h1 {
       color: #9d9bff;
     }
   }
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
 }
 
 .header-quote {
@@ -573,13 +581,12 @@ h1 {
   }
 }
 
-@media (min-width: 728px) {
+@media (max-width: 728px) {
   .post-container {
     grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
-  }
-
-  .img-container {
-    height: 333px;
+    .img-container {
+      height: 170px;
+    }
   }
 }
 
