@@ -10,8 +10,13 @@ description: "Some fun illustrated portraits of a couple of the folks at Avalabs
 
 A month in at Gogopool and doing some fun things along the way. One such project was to draw portraits of some of the fine folks at Avalabs.
 
-![Jay](/images/posts/avalabs-drawings/jay-drawing.png)
-![Daniel K](/images/posts/avalabs-drawings/daniel-kil.png)
-![Parker](/images/posts/avalabs-drawings/parker-heath.jpg)
-![Gab](/images/posts/avalabs-drawings/gab-card.png)
-![Pog](/images/posts/avalabs-drawings/patrick-og.png)
+<div class="image-row">
+  <img src="/images/posts/avalabs-drawings/jay-drawing.png" alt="Jay" />
+  <img src="/images/posts/avalabs-drawings/daniel-kil.png" alt="Daniel K" />
+  <img src="/images/posts/avalabs-drawings/parker-heath.jpg" alt="Parker" />
+</div>
+
+<div class="image-row">
+  <img src="/images/posts/avalabs-drawings/gab-card.png" alt="Gab" />
+  <img src="/images/posts/avalabs-drawings/patrick-og.png" alt="Pog" />
+</div>

@@ -222,7 +222,7 @@ h1 {
     }
   }
   .img-container {
-    height: 320px;
+    // height: 320px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -584,9 +584,9 @@ h1 {
 @media (max-width: 728px) {
   .post-container {
     grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
-    .img-container {
-      height: 170px;
-    }
+    // .img-container {
+    //   height: 170px;
+    // }
   }
 }
 
