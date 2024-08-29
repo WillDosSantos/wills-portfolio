@@ -1,23 +1,41 @@
 ---
 title: 'Planning Center - Services Mobile'
-date: '2018-01-31'
+date: '2012-01-31'
 tags: ['apps & games']
 featureImage: "/images/posts/services-mobile/feature-image.png"
 description: "This is a detailed description of my blog post. It contains many words and offers insights on a specific topic."
 ---
 
 
-In the ever-evolving world of web development, staying up-to-date with the latest technologies is crucial. As someone who has been working with Gatsby.js for several years, I recently made the decision to explore Next.js for rebuilding my website. And let me tell you, the experience has been nothing short of amazing.
+I started working on the mobile app for Planning Center Services (formerly Planning Center Online) in 2011 when I was first hired. We were working backwards because the app was already built and in use on the web but the mobile app was very limited. There were little to no wireframes at the time for it so I went through building user flows and spent a lot of time doing that. We had the time to be able to invest in that and looking back I would have liked to refined that process a little more.
 
+In 2018 I revamped the UI for the mobile app and defined the new approach which is still in use today. At first we were solely focused on iOS but then we expanded to Android eventually and learning about dpi in addition to the different practices Android uses was fun and educational. 
 
-#### The Start
-One of the first things I noticed when diving into the Next.js ecosystem was its incredible speed. Compared to Gatsby, Next.js felt lightning-fast, and I couldn't help but wonder why. While I don't have a definitive answer, I can only speculate that Next.js's performance could be attributed to its leaner plugin ecosystem and potentially fewer backend processes involving GraphQL. Gatsby, on the other hand, heavily relies on GraphQL for data handling.
+### Example of UX
+I typically work with basic shapes at first when it comes to layout for UX. I tend to avoid using copy. First, it's usually not ready and second because folks tend to start treating wireframes like comps when it comes to feedback if they look too specific in any regard.
+![My Schedule - UX/UI example](/images/posts/services-mobile/ux-ui.png)
 
-#### Moving from Gatsby
-Transferring my setup from Gatsby to Next.js was surprisingly smooth. Setting up a blog-like system with navigation and tags was a breeze. With every new post or article, I simply tag it, and the navigation bar automatically reflects the changes. This simplicity and ease of use were refreshing, allowing me to focus more on content creation and less on technical hurdles.
+### Phone Comps
+![My Schedule - Android](/images/posts/services-mobile/my-schedule-android.png)
+![Profile - iOS](/images/posts/services-mobile/profile.png)
+![Profile 2 - iOS](/images/posts/services-mobile/profile-2.png)
+![Design Corrections](/images/posts/services-mobile/design-corrections.png)
+![Contact Final](/images/posts/services-mobile/contact-final.png)
 
-#### Deploying
-Deploying my Next.js site was equally hassle-free. Vercel, the platform I chose for deployment, integrated seamlessly with my GitHub repository. With just a few clicks, my site was up and running, complete with a custom URL. The entire process was streamlined and efficient, leaving me with more time and energy to devote to other aspects of my website.
+### Phone Comps - Sidebar
 
-#### Conclusion
-If you haven't yet explored Next.js, I highly recommend giving it a try. Its speed, simplicity, and efficient deployment process make it an excellent choice for web developers seeking an enhanced user experience. While I cannot claim to have all the answers as to why Next.js outperformed Gatsby for me, I hope this article has sparked your curiosity and provided you with some valuable insights and inspiration for your own web development journey.
+Personally, I'm a fan of the third concept here. I can't remember what we went with but the final result was pretty close to this. Really enjoyed working with Aaron Stewart on this. Can't say enough good things about that man.
+
+<div class="image-row">
+  <img src="/images/posts/services-mobile/sidebar-1.png" alt="UI design for sidebar for phone device for services mobile" />
+  <img src="/images/posts/services-mobile/sidebar-2.png" alt="UI design for sidebar for phone device for services mobile" />
+  <img src="/images/posts/services-mobile/sidebar-3.png" alt="UI design for sidebar for phone device for services mobile" />
+</div>
+
+### Tablet Comps
+![My Schedule - Comp 1](/images/posts/services-mobile/comp-tab-1.png)
+![My Schedule - Comp 2](/images/posts/services-mobile/comp-tab-2.png)
+![My Schedule - Comp 3](/images/posts/services-mobile/comp-tab-3.png)
+
+### Final UI
+![My Schedule - Final UI Mock](/images/posts/services-mobile/final-ui.png)
