@@ -229,13 +229,15 @@ h1 {
     justify-content: center;
   }
 }
-
-.post-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
-  gap: 40px; /* Optional: Spacing between grid items */
-  margin: 4em;
+main {
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+    gap: 40px; /* Optional: Spacing between grid items */
+    margin: 4em;
+  }
 }
+
 
 .btn {
   font-weight: 700;
