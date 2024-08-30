@@ -16,4 +16,6 @@ Coding emails are though when but with MailChimp we were able to the HTML spot o
 
 ### Final Design
 ![Email](/images/posts/product-update-email/email-template.png)
+![Comp](/images/posts/product-update-email/comp.png)
+
 
