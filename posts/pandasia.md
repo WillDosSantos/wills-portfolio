@@ -9,6 +9,13 @@ description: "A product from beginning to end built to distribute airdrops to va
 
 Mystery, wealth, and secret places? Sign me up! I really enjoyed working on this project with my mentor, Johnny Gault, and the rest of the team at GoGoPool. This was Johnny's passion project and his idea for this was to treat it like a speak easy. When he said that, my mind went back to that beautiful art deco design of the 1920s. It was that mixed with some greek mythology. The greek goddess Pandaisia, was the goddess of rich banquets and she also "shared the wealth." This was the mindset behind creating Pandasia; yes, I know it's spelled incorrectly. No reason to it other than it looked cooler that way. 
 
+### Sketches
+<div class="image-row">
+  <img src="/images/posts/pandasia/sketch-1.jpg" alt="Sketch 1" />
+  <img src="/images/posts/pandasia/sketch-2.jpg" alt="Sketch 2" />
+  <img src="/images/posts/pandasia/sketch-3.jpg" alt="Sketch 3" />
+</div>
+
 The branding was a big part of this project and it was really good to start working on something aside from validation and staking for GoGoPool. It was also a different style to try out so I was excited about that prospect and what I could come up with.
 
 ### Branding
