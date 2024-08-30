@@ -33,6 +33,9 @@ Like any creative endeavor, the development of this game involved numerous itera
 
 Undeterred, the team turned to other sources of inspiration and discovered the captivating mechanics of the game "King of Thieves." Inspired by its engaging gameplay, they decided to build upon this concept, resulting in a more dynamic and entertaining experience. This new direction breathed life into the game, offering players a fresh challenge and a renewed sense of excitement.
 
+![New layout](/images/posts/yarn/ref-iphone-6.png)
+![Level Select](/images/posts/yarn/level-select.png)
+
 #### The Journey Begins:
 Armed with a revamped gameplay mechanics, the team embarked on their creative endeavor, developing three distinct areas comprising a total of 30 captivating levels. Each level presented a unique set of challenges, requiring players to demonstrate their dexterity and problem-solving skills. The initial release garnered enthusiastic responses, with players praising the game's addictive nature and charming visuals.
 
@@ -41,6 +44,10 @@ In order to sustain the project financially, the team implemented in-app purchas
 
 #### Reflections and Future Possibilities:
 As the years have passed, the team fondly looks back on this extraordinary journey. The game's compelling concept, delightful gameplay, and stunning design continue to resonate with players. Although the project concluded, the team harbors a desire to revisit this imaginative world someday, armed with new ideas and fresh perspectives.
+
+![A retro version of Yarn](/images/posts/yarn/retro-yarn.png)
+
+[A retro version of Yarn by Kevin Thompson](https://www.lexaloffle.com/bbs/?pid=yarn)
 
 #### Conclusion:
 The tale of the game "Zombie Cats" serves as a testament to the power of creativity, resilience, and adaptability. It reminds us that even in the face of initial setbacks, true innovation can emerge when we remain open to new possibilities. As we explore the vast landscape of mobile gaming, let us remember the remarkable story behind this game and seek inspiration from the passion and dedication that brought it to life.

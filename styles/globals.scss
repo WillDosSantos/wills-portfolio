@@ -234,7 +234,7 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
     gap: 40px; /* Optional: Spacing between grid items */
-    margin: 4em;
+    margin: 1em;
   }
 }
 
@@ -586,6 +586,7 @@ main {
 @media (max-width: 728px) {
   .post-container {
     grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    margin: 4em;
     // .img-container {
     //   height: 170px;
     // }
