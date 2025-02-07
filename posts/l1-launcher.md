@@ -17,5 +17,5 @@ Our team has focused these past few months on making launching layer 1 blockchai
 ![Success page for L1 Marketpalce](/images/posts/l1-launcher/success-2.png)
 ![Rewards Page](/images/posts/l1-launcher/rewards-page.png)
 
-Production is currently in progress and the final product will be available at [l1launcher.com](www.l1launcher.com)
+Production is currently in progress and the final product will be available soon and testing is available at [l1launcher.com](https://beta.l1marketplace.com/launcher/deploy)
 
