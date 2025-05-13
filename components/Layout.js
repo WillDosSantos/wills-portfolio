@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import MobileNavbar from "./MobileNavbar";
 import ContactModal from "./ContactModal";
 
@@ -43,10 +44,11 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
     <div className="container">
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <MobileNavbar/>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <main>
         <Navbar onTagSelect={onTagSelect} isHomePage={isHomePage} onOpenModal={handleOpenModal} />
         {children} {/* This will render the content of the page */}
+        <Footer/>
       </main>
     </div>
   );

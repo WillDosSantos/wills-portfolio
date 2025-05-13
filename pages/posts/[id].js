@@ -49,7 +49,7 @@ export default function Post({ postData }) {
   return (
     <div className="container">
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <main>
         <Navbar
           onTagSelect={(tag) => setSelectedTag(tag)}

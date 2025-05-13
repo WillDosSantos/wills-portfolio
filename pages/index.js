@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { getSortedPostsData } from "../lib/posts";
 import { formatDate } from "../lib/dateUtils";
 import Layout from "../components/Layout";
-import HeaderQuote from "../components/HeaderQuote";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -22,10 +21,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <Layout isHomePage={true} selectedTag={selectedTag} onTagSelect={setSelectedTag}>
-      <HeaderQuote
-        quote="A person who never made a mistake never tried anything new."
-        author="Albert Einstein"
-      />
+      <div className="hero-text"><h1>Let’s make <br></br>something amazing.</h1> Will Dos Santos Designs is a design studio based in San Diego, California. We specialize in branding, illustration, user interface & everything in between.</div>
       <PostList posts={allPostsData.filter((post) => !selectedTag || post.tags.includes(selectedTag))} />
     </Layout>
   );

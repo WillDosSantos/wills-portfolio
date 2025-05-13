@@ -21,7 +21,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #000;
+  background-color: #222131;
   font-family: "Poppins", sans-serif;
 }
 
@@ -180,18 +180,26 @@ main {
   width: 100%;
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-style: italic;
+.hero-text {
+  font-weight: normal;
+  font-size: 2em;
+  max-width: 1500px;
+  margin: 4em 5.5em;
+  color: rgba(255,255,255,0.5);
+  h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+    max-width: 1200px;
+    color: rgba(255,255,255,1);
+  }
 }
 
 .post-card {
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #0e0e0e;
+  background: #2f2e3e;
   overflow: hidden;
-  padding: 16px;
+  padding: 32px;
   a {
     justify-content: space-between;
     display: flex;
@@ -199,21 +207,20 @@ h1 {
     height: 100%;
   }
   h2 {
-    font-weight: bold;
+    font-size: 1.25em;
     margin-top: 1em;
   }
   .post-card--desc {
-    font-size: 12px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
     margin: 0.5em 0 2em 0;
   }
   .post-card__footer {
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 16px;
     ul {
-      color: #606060;
+      color: rgba(255,255,255,0.5);
       text-transform: uppercase;
       letter-spacing: 2px;
     }
@@ -235,6 +242,8 @@ main {
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
     gap: 40px; /* Optional: Spacing between grid items */
     margin: 1em;
+    max-width: 2200px;
+    margin: 0 auto;
   }
 }
 
@@ -549,9 +558,9 @@ main {
   nav button {
       display: none;
   }
-  main {
-    margin-left: 500px;
-  }
+  // main {
+  //   margin-left: 500px;
+  // }
   .sidebar {
     position: fixed;
     width: 500px;
@@ -564,7 +573,20 @@ main {
  
   .navbar {
     display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
+  
+footer {
+  display: flex;
+  width: 100%;
+  padding: 2em;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  background-color: #191925;
+  margin-top: 3em;
+}
+
   .container {
     flex-direction: row;
   }

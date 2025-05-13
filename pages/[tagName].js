@@ -20,6 +20,7 @@ export default function TagPage({ allPostsData }) {
 
   return (
     <Layout isHomePage={true}>
+      <div className="hero-text"><h1>{tagNameFromURL}</h1></div>
        <PostList posts={filteredPosts} />
     </Layout>
   );
