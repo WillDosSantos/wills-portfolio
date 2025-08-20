@@ -36,6 +36,12 @@ I began by sketching broad concepts around the core idea of “make it awesome.�
 
 Through iterations, I refined the logomark into a radiating starburst / asterisk symbol — a bold form that conveys excitement, amplification, and possibility. Paired with a strong wordmark, it created a flexible lockup system.
 
+![Wireframes for Gas Station UI](/images/posts/gas-station/comp-1.png)
+![Wireframes for Gas Station UI](/images/posts/gas-station/comp-2.png)
+![Wireframes for Gas Station UI](/images/posts/gas-station/comp-3.png)
+![Wireframes for Gas Station UI](/images/posts/gas-station/comp-4.png)
+![Wireframes for Gas Station UI](/images/posts/gas-station/comp-5.png)
+
 </br>
 
 1. Restructuring the Layout
@@ -84,7 +90,7 @@ Blockchain users care deeply about trust. I emphasized transparency by:
 - Displaying contract parameters in a clean, legible table.
 
 - Highlighting transaction history in the Fuel Stations list with sortable/searchable data.
-</br>
+
 ![Concepts for Gas Station UI](/images/posts/gas-station/gas-comp-3.png)
 ![Concepts for Gas Station UI](/images/posts/gas-station/gas-comp-4.png)
 ![Concepts for Gas Station UI](/images/posts/gas-station/gas-comp-5.png)
