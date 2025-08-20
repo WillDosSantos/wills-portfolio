@@ -321,6 +321,13 @@ main {
       color: #9d9bff;
     }
   }
+  ol {
+    list-style: auto;
+  }
+  ul {
+    list-style: disc;
+    margin-left: 30px;
+  }
 }
 
 .image-row {
