@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <Layout isHomePage={true} selectedTag={selectedTag} onTagSelect={setSelectedTag}>
-      <div className="hero-text"><h1>Let’s make <br></br>something amazing.</h1> Will Dos Santos Designs is a design studio based in San Diego, California. We specialize in branding, illustration, user interface & everything in between.</div>
+      <div className="hero-text"><h1>Let’s make <br></br>something amazing!</h1> Hi, I'm Will - a designer with over 15 years experience across multiple artistic mediums. I love designing and I would love to work with you to help your vision reach it's goals.</div>
       <PostList posts={allPostsData.filter((post) => !selectedTag || post.tags.includes(selectedTag))} />
     </Layout>
   );
