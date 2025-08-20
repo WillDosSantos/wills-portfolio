@@ -22,7 +22,12 @@ Recruiting is a highly competitive field, and many firms sound the same on paper
 
 - Serve both as standalone leave-behinds and as conversation-supporting tools for business development meetings.
 
-![Logo ideas for AWSM](/images/posts/awsm/image-1.png)
+
+<div class="image-row">
+  <img src="/images/posts/putnam-recruiting/comp-1.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/comp-2.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/comp-3.png" alt="Flyer design concept for Putnam Recruiting" />
+</div>
 
 #### Design Approach
 
@@ -57,6 +62,12 @@ The visual direction emphasized:
 Through collaborative feedback sessions with Wes, we refined both copy and design until the flyers felt aligned with his voice and the professionalism of his brand.
 
 
+<div class="image-row">
+  <img src="/images/posts/putnam-recruiting/comp-4.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/comp-5.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/comp-6.png" alt="Flyer design concept for Putnam Recruiting" />
+</div>
+
 #### Outcome
 
 The final flyers became versatile business development tools:
@@ -67,9 +78,12 @@ They serve as effective leave-behinds, reinforcing conversations and helping pot
 
 The design struck a balance between polished professionalism and approachable clarity, reflecting the personalized service Wes provides.
 
+<div class="image-row">
+  <img src="/images/posts/putnam-recruiting/final.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/final-2.png" alt="Flyer design concept for Putnam Recruiting" />
+  <img src="/images/posts/putnam-recruiting/final-3.png" alt="Flyer design concept for Putnam Recruiting" />
+</div>
 
-
-![Color ideas for AWSM](/images/posts/awsm/final.png)
 
 ### Key Takeaway
 
