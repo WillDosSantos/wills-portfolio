@@ -70,3 +70,4 @@ The final brand identity established Awesome as bold, energetic, and scalable. T
 
 - The result is a brand that doesn’t just look good — it communicates a mindset.
 
+![Full concept for What is Hypha](/images/posts/what-is-hypha/full-concept.jpg)
