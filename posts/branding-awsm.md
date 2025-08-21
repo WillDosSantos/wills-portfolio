@@ -77,3 +77,8 @@ The final brand identity established Awesome as bold, energetic, and scalable. T
 - The result is a brand that doesn’t just look good — it communicates a mindset.
 
 ![Color ideas for AWSM](/images/posts/awsm/final.png)
+
+<br/>
+Great to see it in the office! 
+
+![Color ideas for AWSM](/images/posts/awsm/office.png)
