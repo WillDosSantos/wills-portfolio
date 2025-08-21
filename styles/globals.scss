@@ -334,7 +334,7 @@ main {
 
 .image-row {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
   margin: 2rem 0;
   width: 100%;
@@ -607,7 +607,7 @@ footer {
   main {
     .post-container {
       grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-      margin: 0 2em;;
+      margin: 0 auto;;
     }
   }
 
@@ -618,6 +618,9 @@ footer {
       font-size: 3em;
       margin: 0em 0em 0.5em 0em;
     }
+  }
+  .image-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
