@@ -374,13 +374,10 @@ main {
     width: 100%;
   }
   h2 {
-    background: linear-gradient(160deg, #6663ff 0%, #ed2290 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 30px;
+    color: #fff;
     font-style: normal;
     font-weight: 300;
+    font-size: 3em;
     text-align: center;
   }
   h4 {
