@@ -184,7 +184,7 @@ main {
   font-weight: normal;
   font-size: 2em;
   max-width: 1500px;
-  margin: 4em 5.5em;
+  margin: 1em;
   color: rgba(255,255,255,0.5);
   h1 {
     font-size: 3em;
@@ -610,6 +610,10 @@ footer {
     .post-container {
       grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
     }
+  }
+
+  .hero-text {
+    margin: 4em 5.5em;
   }
 }
 
