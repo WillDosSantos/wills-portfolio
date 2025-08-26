@@ -8,7 +8,6 @@ import MobileNavbar from "./MobileNavbar";
 import ContactModal from "./ContactModal";
 
 const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
-
   const [isModalOpen, setModalOpen] = useState(false);
 
   // Function to handle opening the modal
@@ -24,9 +23,9 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
   // Handle adding/removing the modal-open class to the body element
   useEffect(() => {
     if (isModalOpen) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
   }, [isModalOpen]);
 
@@ -39,16 +38,20 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
     // Close the modal
     setModalOpen(false);
   };
- 
+
   return (
     <div className="container">
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
-      <MobileNavbar/>
+      <MobileNavbar />
       {/* <Sidebar /> */}
       <main>
-        <Navbar onTagSelect={onTagSelect} isHomePage={isHomePage} onOpenModal={handleOpenModal} />
+        <Navbar
+          onTagSelect={onTagSelect}
+          isHomePage={isHomePage}
+          onOpenModal={handleOpenModal}
+        />
         {children} {/* This will render the content of the page */}
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );

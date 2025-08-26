@@ -705,3 +705,17 @@ body.modal-open {
 .mt-2 {
   margin-top: 2em;
 }
+
+/* globals.css */
+@keyframes spin-grad { to { --angle: 360deg; } }
+.mesh-gradient {
+  --angle: 0deg;
+  background:
+    radial-gradient(60rem 60rem at 20% 20%, #8b5cf6 0%, transparent 60%),
+    radial-gradient(50rem 50rem at 80% 30%, #0ea5e9 0%, transparent 60%),
+    radial-gradient(55rem 55rem at 40% 80%, #f43f5e 0%, transparent 60%),
+    radial-gradient(45rem 45rem at 70% 75%, #22d3ee 0%, transparent 60%),
+    conic-gradient(from var(--angle), #0ea5e9, #8b5cf6, #f43f5e, #22d3ee, #0ea5e9);
+  filter: blur(40px) saturate(120%);
+  animation: spin-grad 30s linear infinite;
+}
