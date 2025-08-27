@@ -714,19 +714,23 @@ footer {
   }
 
   .hero-text {
-    margin: 5em 2em 1em 2em;
+    margin: 4em auto 1em auto;
     font-size: 2em;
+    width: 100%;
+    display: block;
+    max-width: 2130px;
+    padding: 0 1em;
     h1 {
       font-size: 3em;
       margin: 0em 0em 0.5em 0em;
       color: #3935ff;
     }
+    .animate-pulse {
+      display: inline-block;
+    }
   }
   .image-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .animate-pulse {
-    display: inline-block;
   }
 }
 
