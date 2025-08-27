@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Lazare+Grotesk:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Lazare+Grotesk:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #e1eaf5;
-  font-family: "Lazare Grotesk", sans-serif;
+  font-family: "Lazare Grotesk", "Poppins", sans-serif;
   position: relative;
   overflow-x: hidden;
   p {
