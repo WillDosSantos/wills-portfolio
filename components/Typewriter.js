@@ -32,7 +32,7 @@ const Typewriter = ({ text, speed = 100, delay = 500, className = "" }) => {
   return (
     <span className={className}>
       {displayText}
-      <span className="animate-pulse">|</span>
+      <span className="animate-pulse"></span>
     </span>
   );
 };

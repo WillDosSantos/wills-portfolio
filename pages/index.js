@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
             delay={300}
           />
         </h1>
-        <p>
+        <p style={{ maxWidth: "1000px" }}>
           Hi, I'm Will - a designer with over 15 years experience across multiple artistic mediums. 
           I love designing and I would love to work with you to help your vision reach its goals.
         </p>
