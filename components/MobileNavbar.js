@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { IoChevronBack, IoMenu } from "react-icons/io5";
 
 function MobileNavbar({ onTagSelect, isHomePage }) {
   const tags = ["case studies", "apps & games", "illustration", "motion"]; // Add more tags as needed
@@ -31,12 +32,19 @@ function MobileNavbar({ onTagSelect, isHomePage }) {
   return (
     <>
       <button className="mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
-        ☰
+      <IoMenu />
       </button>
       <div
         ref={sideNavRef}
         className={`mobile-side-nav ${isOpen ? "open" : ""}`}
       >
+        <button 
+          className="mobile-close-button" 
+          onClick={() => setIsOpen(false)}
+          aria-label="Close menu"
+        >
+          <IoChevronBack />
+        </button>
         <ul>
           <Link href="/">
             <li
