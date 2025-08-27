@@ -361,7 +361,7 @@ main {
 
 .btn--primary {
   border-color: #6663ff;
-  color: #6663ff;
+  color: #fff;
   transition: background-color 0.1s ease-in-out;
   &:hover {
     background-color: #212051;
@@ -743,7 +743,7 @@ body.modal-open {
 
 //Popup Modal
 .modal-overlay {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.95);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -751,6 +751,12 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+  
+  &.closing {
+    animation: fadeOut 0.3s ease-in;
+  }
+  
   .modal {
     max-width: 800px;
     border-radius: 16px;
@@ -763,6 +769,24 @@ body.modal-open {
     margin: 4em 0;
     max-height: 80vh; /* Adjust as needed */
     overflow-y: auto;
+    animation: modalSlideUp 0.4s ease-out;
+    
+    &.closing {
+      animation: modalSlideDown 0.3s ease-in;
+    }
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    a {
+      text-decoration: underline;
+      color: #fff;
+      &:hover {
+        color: #6663ff;
+      }
+    }
   }
 }
 
@@ -786,7 +810,7 @@ body.modal-open {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   label {
-    color: #1b1a26;
+    color: rgba(255,255,255,0.5);
     margin-top: 1.3em;
   }
   button {
@@ -821,6 +845,47 @@ body.modal-open {
     conic-gradient(from var(--angle), #0ea5e9, #8b5cf6, #f43f5e, #22d3ee, #0ea5e9);
   filter: blur(40px) saturate(120%);
   animation: spin-grad 30s linear infinite;
+}
+
+// Modal animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalSlideDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
 
 .animate-pulse {

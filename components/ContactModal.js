@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function ContactModal({ isOpen, onClose, onSubmit }) {
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    // Wait for animation to complete before actually closing
+    setTimeout(() => {
+      onClose();
+      setIsClosing(false);
+    }, 300);
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-    <div className="modal">
+    <div className={`modal-overlay ${isClosing ? 'closing' : ''}`}>
+    <div className={`modal ${isClosing ? 'closing' : ''}`}>
       <div className="modal--header">
         <p>Let's work together</p>
-        <button onClick={onClose}>Close</button>
+        <button onClick={handleClose}>Close</button>
         </div>
       
       <form className="contact-form" onSubmit={onSubmit}>
