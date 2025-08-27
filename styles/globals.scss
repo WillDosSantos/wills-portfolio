@@ -725,6 +725,9 @@ footer {
   .image-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .animate-pulse {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 728px) {
@@ -892,6 +895,6 @@ body.modal-open {
   width: 55px;
   height: 71px;
   background-color: #3935ff;
-  display: inline-block;
+  display: none;
   margin-left: 10px;
 }
