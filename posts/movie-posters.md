@@ -43,12 +43,12 @@ PiCO is a huge part of the culture at Planning Center. That's why I decided to m
 ### IRL Photos
 
 <div class="image-row">
-  <img src="/images/posts/movie-posters/photo-1.jpg" alt="Photo 1" />
-  <img src="/images/posts/movie-posters/photo-2.jpg" alt="Photo 2" />
-  <img src="/images/posts/movie-posters/photo-3.jpg" alt="Photo 3" />
+  <img src="/images/posts/movie-posters/photo-1.JPG" alt="Photo 1" />
+  <img src="/images/posts/movie-posters/photo-2.JPG" alt="Photo 2" />
+  <img src="/images/posts/movie-posters/photo-3.JPG" alt="Photo 3" />
 </div>
 
 <div class="image-row">
-  <img src="/images/posts/movie-posters/photo-4.jpg" alt="Photo 4" />
-  <img src="/images/posts/movie-posters/photo-5.jpg" alt="Photo 5" />
+  <img src="/images/posts/movie-posters/photo-4.JPG" alt="Photo 4" />
+  <img src="/images/posts/movie-posters/photo-5.JPG" alt="Photo 5" />
 </div>
