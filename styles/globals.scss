@@ -399,8 +399,13 @@ main {
 .blog-post-container {
   padding: 2em 4em 12em 4em;
   img {
-    margin: 3em 0 3em 0;
+    margin: 3em auto 3em auto;
     border-radius: 16px;
+  }
+  p {
+    img {
+      max-width: 800px
+    }
   }
   h3 {
     font-size: 24px;
