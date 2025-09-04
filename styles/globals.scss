@@ -287,12 +287,11 @@ main {
 
   .post-card {
     border-radius: 16px;
-    background: rgba(255,255,255,0.05);
+    // background: rgba(255,255,255,0.05);
     overflow: hidden;
-    padding: 32px;
     width: 100%;
     border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 10px 80px 240px rgba(0, 0, 0, 0.05), inset 2px 20px 52px 20px rgba(255, 255, 255, 0.8);
+    // box-shadow: 10px 80px 240px rgba(0, 0, 0, 0.05), inset 2px 20px 52px 20px rgba(255, 255, 255, 0.8);
   a {
     justify-content: space-between;
     display: flex;
@@ -953,4 +952,94 @@ body.modal-open {
   background-color: #3935ff;
   display: none;
   margin-left: 10px;
+}
+/* Post card hover effects */
+.post-card-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 32px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  
+  h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  
+  .post-card--desc {
+    color: #fff;
+    margin: 0.5em 0 1em 0;
+  }
+  
+  .post-card__footer {
+    ul {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.post-card:hover .post-card-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.img-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix z-index for post card hover effects */
+.post-card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 32px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 10; /* Ensure text appears above image */
+  
+  h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  
+  .post-card--desc {
+    color: #fff;
+    margin: 0.5em 0 1em 0;
+  }
+  
+  .post-card__footer {
+    ul {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.img-container {
+  position: relative;
+  z-index: 1; /* Keep image below text */
 }

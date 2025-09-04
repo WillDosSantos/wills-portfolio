@@ -32,32 +32,28 @@ export default function PostList({ posts }) {
           key={id}
         >
           <Link href={`/posts/${id}`}>
-            <div className="post-card-content">
-              {featureImage && (
-                <div className="img-container">
-                  <Image
-                    src={featureImage}
-                    alt={`Feature image for ${title}`}
-                    width={500}
-                    height={300}
-                    style={{
-                      width: "100%",
-                    }}
-                  />
-                </div>
-              )}
-              <div className="post-card-text">
-                <h2>{title}</h2>
-                <p className="post-card--desc">{truncateString(description, 100)}</p>
-                <div className="post-card__footer">
-                  <ul>
-                    {tags.map((tag) => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
-                  <p>{formatDate(date)}</p>
-                </div>
+            {featureImage && (
+              <div className="img-container">
+                <Image
+                  src={featureImage}
+                  alt={`Feature image for ${title}`}
+                  width={500}
+                  height={300}
+                  style={{
+                    width: "100%",
+                  }}
+                />
               </div>
+            )}
+            <h2>{title}</h2>
+            <p className="post-card--desc">{truncateString(description, 100)}</p>
+            <div className="post-card__footer">
+              <ul>
+                {tags.map((tag) => (
+                  <li key={tag}>{tag}</li>
+                ))}
+              </ul>
+              <p>{formatDate(date)}</p>
             </div>
           </Link>
         </motion.div>
