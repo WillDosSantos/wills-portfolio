@@ -1075,6 +1075,12 @@ body.modal-open {
   opacity: 1;
 }
 
+/* Add blur effect to image on hover */
+.post-card:hover .img-container img {
+  filter: blur(10px);
+  transition: filter 0.3s ease-in-out;
+}
+
 .post-card-text {
   position: absolute;
   bottom: 0;
