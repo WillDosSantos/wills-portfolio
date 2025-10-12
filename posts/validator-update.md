@@ -1,7 +1,7 @@
 ---
 title: 'Hypha - Validator Registration UI'
 date: '2025-08-20'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/validator-update/feature-image.png"
 description: "Who says that blank state icons can't be a little bit fun looking"
 ---

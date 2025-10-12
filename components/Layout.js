@@ -56,8 +56,8 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
           onOpenModal={handleOpenModal}
         />
         {children} {/* This will render the content of the page */}
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };

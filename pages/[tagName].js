@@ -8,7 +8,13 @@ import PostList from "../components/PostList";
 export default function TagPage({ allPostsData }) {
   const router = useRouter();
   const { tagName } = router.query;
-  const tagNameFromURL = tagName.replace("-", " ");
+  let tagNameFromURL = tagName.replace(/-/g, " ");
+  
+  // Handle special cases for URL decoding
+  if (tagNameFromURL === 'ui ux') {
+    tagNameFromURL = 'UI & UX';
+  }
+  
   const filteredPosts = allPostsData.filter(post => post.tags.includes(tagNameFromURL));
 
   const [selectedTag, setSelectedTag] = useState(null);
@@ -34,7 +40,14 @@ export async function getStaticPaths() {
   const allTags = Array.from(new Set(allPostsData.flatMap(post => post.tags)));
 
   // Generate paths for each tag
-  const paths = allTags.map(tag => ({ params: { tagName: tag.replace(" ", "-").toLowerCase() } }));
+  const paths = allTags.map(tag => {
+    let urlTag = tag.replace(/ /g, "-").toLowerCase();
+    // Handle special case for UI & UX
+    if (tag === 'UI & UX') {
+      urlTag = 'ui-ux';
+    }
+    return { params: { tagName: urlTag } };
+  });
 
   return {
     paths,

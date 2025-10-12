@@ -1,7 +1,7 @@
 ---
 title: 'Yarn - The Zombie Cat Game'
 date: '2016-10-31'
-tags: ['apps & games']
+tags: ['games']
 featureImage: "/images/posts/yarn/feature-image.png"
 description: "This is a detailed description of my blog post. It contains many words and offers insights on a specific topic."
 ---

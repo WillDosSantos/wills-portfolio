@@ -1,7 +1,7 @@
 ---
 title: 'ReadyFive - Login Redux'
 date: '2021-12-10'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/readyfive-login/feature-image.png"
 description: "Redesign the Ready Five login experience."
 ---

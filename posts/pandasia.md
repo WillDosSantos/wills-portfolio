@@ -1,7 +1,7 @@
 ---
 title: 'Pandasia - Airdrops for Validators'
 date: '2023-12-04'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/pandasia/feature-image.png"
 description: "A product from beginning to end built to distribute airdrops to validators."
 ---

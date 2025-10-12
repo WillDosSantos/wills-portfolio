@@ -1,7 +1,7 @@
 ---
 title: 'App Design - Planning Center Music Stand'
 date: '2014-09-01'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/music-stand/feature-image.png"
 description: "Equip your musicians to play their best!"
 ---

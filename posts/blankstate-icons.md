@@ -1,7 +1,7 @@
 ---
 title: 'Hypha - Blank State Icons'
 date: '2025-04-20'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/icons-blankstates/feature-image.png"
 description: "Who says that blank state icons can't be a little bit fun looking"
 ---

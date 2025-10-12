@@ -1,7 +1,7 @@
 ---
 title: 'Planning Center Services - 2014 Mobile UI Reflection'
 date: '2014-06-15'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/services-mobile-2/feature-image.png"
 description: "A look back at the mobile UI designs I created for Planning Center Services in 2014, exploring the design challenges and solutions of that era."
 ---

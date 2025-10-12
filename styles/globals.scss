@@ -25,6 +25,8 @@ body {
   font-family: "Lazare Grotesk", "Poppins", sans-serif;
   position: relative;
   overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
   p {
     color: #1b1a26;
   }
@@ -256,6 +258,11 @@ body {
       }
     }
   }
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 
@@ -365,6 +372,17 @@ main {
   transition: background-color 0.1s ease-in-out;
   &:hover {
     background-color: #212051;
+  }
+}
+
+.btn--outline-blue {
+  background-color: transparent;
+  border: 2px solid #3935ff;
+  color: #3935ff;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #3935ff;
+    color: #fff;
   }
 }
 
@@ -570,7 +588,10 @@ main {
     font-size: 12px;
     max-width: 350px;
     h3 {
-      
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 0 0 0.5em 0;
+      color: #1b1a26;
     }
     p {
       margin-top: 1em;
@@ -690,7 +711,7 @@ main {
       width: auto;
       display: none;
   }
-  nav button {
+  .mobile-menu-button {
       display: none;
   }
   // main {
@@ -712,7 +733,7 @@ main {
   }
 
   .container {
-    flex-direction: row;
+    flex-direction: column;
   }
   .sidebar-content {
     margin: 0;

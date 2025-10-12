@@ -1,7 +1,7 @@
 ---
 title: '8-Bit Game UI'
 date: '2023-03-24'
-tags: ['apps & games']
+tags: ['games']
 featureImage: "/images/posts/hunting-party-game-ui/feature-image.png"
 description: "Early this year I got the chance to work with the OOPA NFT team. Our goal was build a Subnet and use our tech here a GoGoPool to host it for the Party Mansion team. I was given the task of creating a page design that would match the 8-bit style that the team had already crafted as a part of their established brand."
 ---

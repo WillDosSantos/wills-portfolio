@@ -1,7 +1,7 @@
 ---
 title: 'Lembra - Improving online obituaries'
 date: '2025-08-19'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/lembra/feature-image.png"
 description: "Creating an awesome brand for the amazing company that creating employee & customer experiences!"
 ---

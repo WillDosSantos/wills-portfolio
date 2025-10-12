@@ -1,7 +1,7 @@
 ---
 title: 'Planning Center - Services Mobile'
 date: '2012-01-31'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/services-mobile/feature-image.png"
 description: "This is a detailed description of my blog post. It contains many words and offers insights on a specific topic."
 ---

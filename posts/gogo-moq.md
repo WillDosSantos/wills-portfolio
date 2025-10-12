@@ -1,7 +1,7 @@
 ---
 title: 'UI and Web Design - Mockups'
 date: '2025-08-026'
-tags: ['apps & games']
+tags: ['UI & UX']
 featureImage: "/images/posts/gogo-moq/feature-image.png"
 description: "Reflection on some of the ideas we had when redesigning gogopool.com"
 ---
