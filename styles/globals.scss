@@ -280,14 +280,15 @@ main {
 .hero-text {
   font-weight: normal;
   font-size: 1em;
-  max-width: 1500px;
-  margin: 3em;
+  width: 100%;
+  max-width: 2150px;
+  margin: 3em auto;
+  padding: 0 2em;
   color: #1b1a26;
   h1 {
     font-size: 2.3em;
     line-height: 1em;
     margin: 3em 0em 1em 0em;
-    max-width: 1200px;
     color: #1b1a26;
   }
 }
@@ -343,9 +344,39 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
     gap: 40px; /* Optional: Spacing between grid items */
+    width: 100%;
+    max-width: 2150px;
     margin: 1em auto;
-    max-width: 2200px;
-    margin: 1em;
+    padding: 0 2em;
+  }
+}
+
+.organized-post-container {
+  .post-section {
+    margin-bottom: 4em;
+    
+    .section-title {
+      font-size: 2em;
+      font-weight: 600;
+      color: #3935ff;
+      margin: 2em 0 1em 0;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      width: 100%;
+      max-width: 2150px;
+      margin: 2em auto 1em auto;
+      padding: 0 2em;
+    }
+    
+    .post-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+      width: 100%;
+      max-width: 2150px;
+      margin: 1em auto;
+      padding: 0 2em;
+    }
   }
 }
 
@@ -746,8 +777,14 @@ main {
   main {
     .post-container {
       grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-      margin: 0 auto;
-      padding: 2em;
+    }
+  }
+  
+  .organized-post-container {
+    .post-section {
+      .post-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 
@@ -795,11 +832,18 @@ footer {
 
 @media (max-width: 728px) {
   .post-container {
-    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
-    margin: 4em;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
     // .img-container {
     //   height: 170px;
     // }
+  }
+  
+  .organized-post-container {
+    .post-section {
+      .post-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
   
   footer {
