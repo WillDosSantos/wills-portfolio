@@ -41,11 +41,6 @@ const Layout = ({ children, selectedTag, onTagSelect, isHomePage }) => {
 
   return (
     <div className="container">
-      {/* Animated gradient blobs */}
-      <div className="gradient-blob-1"></div>
-      <div className="gradient-blob-2"></div>
-      <div className="gradient-blob-3"></div>
-      
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <MobileNavbar />
       {/* <Sidebar /> */}
