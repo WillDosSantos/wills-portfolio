@@ -6,6 +6,8 @@ featureImage: "/images/posts/multisig-labs/feature-image.png"
 description: "Searching for the identity of MultiSig Labs, Inc. - the parent company of GoGoPool."
 ---
 
+Check out the final site at [multisiglabs.org](https://multisiglabs.org)
+
 ### Capturing lighting in a bottle
 
 I've been exploring some new approaches to brand design. Usually, I fixate on the logo and color scheme a first but this time I decided to work backwards a bit and start with the weblayout. There are so many sources of inspiration out there and one that I often look at and wish that I could use is from Mike at Creative Mints. His work is all over dribbble if you are interested. I highly recommend checking it out.
@@ -34,4 +36,4 @@ After doing these more in-depth and detailed designs, we decided to change cours
 ![Figma Comp](/images/posts/multisig-labs/figma-comp-1.png)
 
 ### Implementation
-I didn't want to dedicate a ton of time to this project so I quickly implemented it with NextJS and wrote a bunch of really hacky CSS that is not my finest work but it does the job. You can view the site here at [multisiglabs.org](https://multisiglabs.org)
+I didn't want to dedicate a ton of time to this project so I quickly implemented it with NextJS and wrote a bunch of really hacky CSS that is not my finest work but it does the job. You can view the site at [multisiglabs.org](https://multisiglabs.org)

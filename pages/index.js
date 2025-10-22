@@ -55,7 +55,7 @@ export default function Home({ allPostsData }) {
               letterSpacing: "2px",
             }}
           >
-            Products I've designed
+            Products I've led design for:
           </h2>
 
             <div style={{ marginBottom: "2rem" }} data-aos="fade-up" data-aos-delay="100">
