@@ -61,7 +61,7 @@ export default function Post({ postData }) {
             <p>{postData.tags}</p>
             <p>{formatDate(postData.date)}</p>
           </div>
-          {postData.featureImage && (
+          {postData.featureImage && !postData.tags.includes("no-image") && (
             <Image
               src={postData.featureImage}
               alt={`Featured image for ${postData.title}`}

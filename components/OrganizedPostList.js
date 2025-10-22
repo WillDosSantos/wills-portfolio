@@ -14,8 +14,8 @@ export default function OrganizedPostList({ posts }) {
   }, [selectedTag]);
 
   function truncateString(str, num) {
-    if (str.length <= num) {
-      return str;
+    if (!str || str.length <= num) {
+      return str || "";
     }
     return str.slice(0, num) + "...";
   }

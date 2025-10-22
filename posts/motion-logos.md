@@ -2,7 +2,7 @@
 title: 'Motion Logos'
 date: '2022-08-28'
 tags: ['motion']
-featureImage: "/images/posts/motion-logos/my-planning-center.gif"
+featureImage: "/images/posts/motion-logos/feature-image.png"
 description: "A collection of logos brought to life with the power of motion"
 ---
 
