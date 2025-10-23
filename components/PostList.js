@@ -50,11 +50,11 @@ export default function PostList({ posts }) {
                 <h2>{title}</h2>
                 <p className="post-card--desc">{truncateString(description, 100)}</p>
                 <div className="post-card__footer">
-                  <ul>
-                    {tags.map((tag) => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
+                        <ul>
+                          {tags.filter(tag => tag !== "no-image").map((tag) => (
+                            <li key={tag}>{tag}</li>
+                          ))}
+                        </ul>
                   <p>{formatDate(date)}</p>
                 </div>
               </div>

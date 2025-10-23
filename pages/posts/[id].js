@@ -58,7 +58,7 @@ export default function Post({ postData }) {
         <div data-aos="fade-up" className="blog-post-container">
           <h2>{postData.title}</h2>
           <div className="blog-post-details">
-            <p>{postData.tags}</p>
+            <p>{postData.tags.filter(tag => tag !== "no-image").join(", ")}</p>
             <p>{formatDate(postData.date)}</p>
           </div>
           {postData.featureImage && !postData.tags.includes("no-image") && (
