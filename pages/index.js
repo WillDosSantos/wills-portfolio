@@ -27,19 +27,168 @@ export default function Home({ allPostsData }) {
       selectedTag={selectedTag}
       onTagSelect={setSelectedTag}
     >
-      <div className="hero-text">
-        <h1 style={{ maxWidth: "1000px" }}>
-          <Typewriter
-            text="Let's make something amazing!"
-            speed={80}
-            delay={300}
-          />
-        </h1>
-        <p style={{ maxWidth: "1000px" }}>
-          Hi, I'm Will - a designer with over 15 years experience across
-          multiple artistic mediums. I love designing and I would love to work
-          with you to help your vision reach its goals.
-        </p>
+      <div className="hero-text" style={{ maxWidth: "1800px", margin: "5em auto" }}>
+        <div style={{ 
+          display: "flex", 
+          alignItems: "center", 
+          justifyContent: "space-between",
+          gap: "3rem",
+          flexWrap: "wrap",
+        }}>
+          <div style={{ flex: "1", minWidth: "300px", maxWidth: "1000px" }}>
+            <h1>
+              <Typewriter
+                text="Let's make something amazing!"
+                speed={80}
+                delay={300}
+              />
+            </h1>
+            <p>
+              Hi, I'm Will - a designer with over 15 years experience across
+              multiple artistic mediums. I love designing and I would love to work
+              with you to help your vision reach its goals.
+            </p>
+          </div>
+          <div style={{ flex: "0 0 auto", position: "relative" }} className="hero-image-container">
+            <div className="testimonial-card testimonial-card-1" style={{
+              borderRadius: "16px",
+              background: "linear-gradient(270deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.90) 100%)",
+              boxShadow: "0 32px 54px 0 rgba(0, 0, 0, 0.10)",
+              backdropFilter: "blur(48.5px)",
+              padding: "1rem",
+              position: "absolute",
+              top: "70px",
+              left: "100px",
+              transform: "translate(-50%, -50%)",
+              zIndex: 1000,
+              fontSize: "1rem",
+            }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+            >
+              <p>This is amazing! You nailed it!
+                <span style={{ display: "block", fontSize: "0.8rem", color: "#6663ff"}}>- Emin Gün Sirer (CEO of Avalabs)</span>
+              </p>
+            </div>
+            <div className="testimonial-card testimonial-card-2" style={{
+              borderRadius: "16px",
+              background: "linear-gradient(270deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.90) 100%)",
+              boxShadow: "0 32px 54px 0 rgba(0, 0, 0, 0.10)",
+              backdropFilter: "blur(48.5px)",
+              padding: "1rem",
+              position: "absolute",
+              bottom: "0px",
+              right: "-120px",
+              transform: "translate(-50%, -50%)",
+              zIndex: 1000,
+              fontSize: "1rem",
+            }}
+            data-aos="fade-up"
+            data-aos-delay="600"
+            >
+              <p>I hate how good you are.
+                <span style={{ display: "block", fontSize: "0.8rem", color: "#6663ff"}}>- Jeff Berg (CEO of Planning Center)</span>
+              </p>
+            </div>
+            <div 
+              className="hero-image-wrapper"
+              style={{ 
+                position: "relative",
+                width: "500px",
+                height: "500px"
+              }}
+              data-aos="fade-up"
+            >
+              <Image
+                src="/images/hero.svg"
+                alt="gradient liquid background"
+                width={700}
+                height={700}
+                style={{ 
+                  width: "100%", 
+                  height: "100%",
+                  borderRadius: "8px"
+                }}
+              />
+              <Image
+                src="/images/logo-1.svg"
+                alt="Logo 1"
+                width={100}
+                height={100}
+                style={{
+                  position: "absolute",
+                  top: "68%",
+                  left: "8%",
+                  width: "180px",
+                  height: "auto"
+                }}
+                data-aos="fade-up"
+                data-aos-delay="100"
+              />
+              <Image
+                src="/images/logo-2.svg"
+                alt="Logo 2"
+                width={100}
+                height={100}
+                style={{
+                  position: "absolute",
+                  top: "10%",
+                  right: "8%",
+                  width: "180px",
+                  height: "auto"
+                }}
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <Image
+                src="/images/logo-3.svg"
+                alt="Logo 3"
+                width={100}
+                height={100}
+                style={{
+                  position: "absolute",
+                  top: "193px",
+                  left: "60px",
+                  width: "180px",
+                  height: "auto"
+                }}
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+              <Image
+                src="/images/logo-4.svg"
+                alt="Logo 4"
+                width={100}
+                height={100}
+                style={{
+                  position: "absolute",
+                  bottom: "130px",
+                  right: "160px",
+                  width: "180px",
+                  height: "auto"
+                }}
+                data-aos="fade-up"
+                data-aos-delay="400"
+              />
+              <Image
+                src="/images/logo-5.svg"
+                alt="Logo 5"
+                width={100}
+                height={100}
+                style={{
+                  position: "absolute",
+                  top: "282px",
+                  left: "70%",
+                  transform: "translate(-50%, -50%)",
+                  width: "180px",
+                  height: "auto"
+                }}
+                data-aos="fade-up"
+                data-aos-delay="500"
+              />
+            </div>
+          </div>
+        </div>
 
         <div
           className="companies-section"
