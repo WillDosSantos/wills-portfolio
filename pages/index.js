@@ -207,7 +207,7 @@ export default function Home({ allPostsData }) {
             Products I've led design for:
           </h2>
 
-            <div style={{ marginBottom: "2rem" }} data-aos="fade-up" data-aos-delay="100">
+            <div style={{ marginBottom: "3rem" }} data-aos="fade-up" data-aos-delay="100">
               <h3
                 style={{
                   fontSize: "1.2rem",
@@ -279,6 +279,62 @@ export default function Home({ allPostsData }) {
                     style={{ color: "#6663ff", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "space-between" }}
                   >
                     <span>Pandasia</span>
+                    <FiArrowUpRight style={{ marginLeft: "0.5rem", fontSize: "1.5rem" }} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style={{ marginBottom: "3rem" }} data-aos="fade-up" data-aos-delay="500">
+            <h3
+                style={{
+                  fontSize: "1.2rem",
+                  marginBottom: "0.8rem",
+                  color: "#1b1a26",
+                  fontWeight: "600",
+                }}
+              >
+                Ready Five
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                <li
+                  style={{
+                    marginBottom: "0.5rem",
+                    fontSize: "1.2rem",
+                    borderBottom: "1px solid rgb(195, 193, 213)",
+                    borderStyle: "dotted",
+                    padding: "0.5em",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <a
+                    href="https://www.readyfive.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#6663ff", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "space-between" }}
+                  >
+                    <span>Ready Five - Web</span>
+                    <FiArrowUpRight style={{ marginLeft: "0.5rem", fontSize: "1.5rem" }} />
+                  </a>
+                </li>
+                <li
+                  style={{
+                    marginBottom: "0.5rem",
+                    fontSize: "1.2rem",
+                    borderBottom: "1px solid rgb(195, 193, 213)",
+                    borderStyle: "dotted",
+                    padding: "0.5em",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <a
+                    href="https://www.readyfive.io/mobile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#6663ff", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "space-between" }}
+                  >
+                    <span>Ready Five - Mobile iOS & Android</span>
                     <FiArrowUpRight style={{ marginLeft: "0.5rem", fontSize: "1.5rem" }} />
                   </a>
                 </li>
