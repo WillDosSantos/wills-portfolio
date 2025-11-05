@@ -117,8 +117,8 @@ export default function Home({ allPostsData }) {
                 height={100}
                 style={{
                   position: "absolute",
-                  top: "68%",
-                  left: "8%",
+                  top: "70%",
+                  left: "11%",
                   width: "180px",
                   height: "auto"
                 }}
@@ -147,9 +147,9 @@ export default function Home({ allPostsData }) {
                 height={100}
                 style={{
                   position: "absolute",
-                  top: "193px",
-                  left: "60px",
-                  width: "180px",
+                  bottom: "170px",
+                  left: "70px",
+                  width: "120px",
                   height: "auto"
                 }}
                 data-aos="fade-up"
@@ -162,9 +162,9 @@ export default function Home({ allPostsData }) {
                 height={100}
                 style={{
                   position: "absolute",
-                  bottom: "130px",
-                  right: "160px",
-                  width: "180px",
+                  bottom: "170px",
+                  right: "180px",
+                  width: "140px",
                   height: "auto"
                 }}
                 data-aos="fade-up"
@@ -177,10 +177,10 @@ export default function Home({ allPostsData }) {
                 height={100}
                 style={{
                   position: "absolute",
-                  top: "282px",
-                  left: "70%",
+                  bottom: "110px",
+                  left: "72%",
                   transform: "translate(-50%, -50%)",
-                  width: "180px",
+                  width: "120px",
                   height: "auto"
                 }}
                 data-aos="fade-up"

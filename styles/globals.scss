@@ -795,23 +795,7 @@ footer {
   }
 
   .hero-image-wrapper {
-    width: 100% !important;
-    max-width: 500px;
-    height: auto !important;
-    aspect-ratio: 1 / 1;
-    order: 2;
-    margin: 1rem 0;
-    
-    img {
-      width: 100% !important;
-      height: auto !important;
-    }
-
-    // Scale down logos on mobile
-    img[alt^="Logo"] {
-      width: 120px !important;
-      max-width: 120px !important;
-    }
+    display: none !important;
   }
   
   footer {
