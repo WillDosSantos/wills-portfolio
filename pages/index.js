@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
       selectedTag={selectedTag}
       onTagSelect={setSelectedTag}
     >
-      <div className="hero-text" style={{ maxWidth: "1800px", margin: "5em auto" }}>
+      <div className="hero-text" style={{ maxWidth: "1300px", margin: "5em auto" }}>
         <div style={{ 
           display: "flex", 
           alignItems: "center", 
