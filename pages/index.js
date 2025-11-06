@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
               />
             </h1>
             <p>
-              Hi, I'm Will - a designer with over 15 years experience across
+              Hi, I'm Will - a lead productdesigner with over 15 years experience across
               multiple artistic mediums. I love designing and I would love to work
               with you to help your vision reach its goals.
             </p>
