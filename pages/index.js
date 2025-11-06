@@ -86,8 +86,8 @@ export default function Home({ allPostsData }) {
             data-aos="fade-up"
             data-aos-delay="600"
             >
-              <p>I hate how good you are.
-                <span style={{ display: "block", fontSize: "0.8rem", color: "#6663ff"}}>- Jeff Berg (CEO of Planning Center)</span>
+              <p>This looks so good! LFGG! 
+                <span style={{ display: "block", fontSize: "0.8rem", color: "#6663ff"}}>- Steven Gates (CEO of Hypha)</span>
               </p>
             </div>
             <div 
