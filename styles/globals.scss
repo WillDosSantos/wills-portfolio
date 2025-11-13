@@ -22,15 +22,19 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #e1eaf5;
-  font-family: "Lazare Grotesk", "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   overflow-x: hidden;
   margin: 0;
   min-height: 100vh;
-  p {
+  p,
+  li {
     color: #1b1a26;
+    font-family: "Poppins", sans-serif;
   }
-  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lazare Grotesk", sans-serif;
+  }
   
 }
 
@@ -436,7 +440,7 @@ main {
 
 .blog-post-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   margin: 0 auto;
   max-width: 1350px;
   .post-feature-image {
