@@ -44,9 +44,7 @@ export default function Home({ allPostsData }) {
               />
             </h1>
             <p className="hero-text-p">
-              Hi, I'm Will - a strategic design thinker with over 15 years experience across
-              multiple artistic mediums. I love designing and I would love to work
-              with you to help your vision reach its goals.
+            Hi, I’m Will — a senior UX/UI designer with 15+ years of experience crafting thoughtful digital experiences. I love helping teams sharpen their vision and turn ideas into purposeful, high-quality products.
             </p>
           </div>
           <div style={{ flex: "0 0 auto", position: "relative" }} className="hero-image-container">
