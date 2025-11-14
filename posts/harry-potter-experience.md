@@ -29,33 +29,6 @@ Halloween is borning. Every single house has rotting corpses, demons, jack-o-lan
   <img src="/images/posts/harry-potter-experience/spider-4.png" alt="Aragog encounter immersive lighting plan" />
 
 
-### Spider (Aragog)
+### UX design for real life
 
-We made Aragog with expanding foam, pvc pipes, hair wigs, and a lot of spray paint. Ironically, I don't really like spiders. But this guy was fun to work on and he has become a staple for our Halloween decor.
-
-### Experience Goals
-
-- **Immersive Guidance**: Provide clear navigation through exhibits while preserving a sense of discovery and surprise
-- **Narrative Alignment**: Sync digital interactions with the canon timeline to keep fans anchored in the story
-- **Accessibility & Flow**: Ensure the experience was friendly for families, first-time visitors, and seasoned Potterheads alike
-- **Modular Content**: Build a system that could scale for new scenes, characters, and seasonal events
-
-### Interaction Design
-
-The core interaction model revolved around context-aware panels that adapt as the visitor moves through the exhibit. Each screen delivers just-in-time information so guests can stay focused on what is happening in front of them. We had a floating Wanted Wizard sign for those people that wanted to snap a quick pic and tag us online.
-
-
-### Motion & Sound
-
-To keep the UI feeling alive and magical, I combined subtle parallax motion with layered music pulled straight from the films. Every interaction has a corresponding sound signature so users know when they have activated the right action.
-
-
-### Outcome
-
-The final experience blends tactile storytelling with responsive digital layers. Guests receive a guided journey that feels cinematic, personal, and shareable. The modular system keeps the experience fresh and easy to extend, while the UI remains intuitive for audiences of all ages.
-
-### Role & Tools
-
-- **Role**: Lead UI/UX Designer, Production Design Direction
-- **Tools**: Figma, After Effects, 
-- **Deliverables**: Interactive props, motion graphic reels, accessibility experiences
+I usually create my design work via the computer. Everything is digital. But this was something that I really enjoyed creating for real life. Seeing peoples reactions to the final product created a lasting memory for them, my family, and myself. 
