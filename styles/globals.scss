@@ -35,7 +35,9 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Lazare Grotesk", sans-serif;
   }
-  
+  nav a li {
+    font-family: "Lazare Grotesk", sans-serif;
+  }
 }
 
 /* styles/globals.css */
@@ -213,6 +215,9 @@ main {
     margin: 3em 0em 1em 0em;
     color: #1b1a26;
   }
+  p{ 
+    font-family: "Lazare Grotesk", sans-serif;
+  }
 }
 
   .post-card {
@@ -372,6 +377,7 @@ main {
   img {
     margin: 3em auto 3em auto;
     border-radius: 16px;
+    padding: 0em;
   }
   p {
     img {
@@ -1057,9 +1063,14 @@ body.modal-open {
   .post-card__footer {
     ul {
       color: #fff;
+      li {
+        color: #fff;
+        font-family: "Lazare Grotesk", sans-serif;
+      }
     }
     p {
       color: #fff;
+      font-family: "Lazare Grotesk", sans-serif;
     }
   }
 }

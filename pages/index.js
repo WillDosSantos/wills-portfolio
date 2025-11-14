@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
                 delay={300}
               />
             </h1>
-            <p>
+            <p className="hero-text-p">
               Hi, I'm Will - a strategic design thinker with over 15 years experience across
               multiple artistic mediums. I love designing and I would love to work
               with you to help your vision reach its goals.
