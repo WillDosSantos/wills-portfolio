@@ -4,7 +4,7 @@ date: "2024-10-05"
 tags: ["motion", "no-image"]
 category: "motion"
 featureImage: "/images/posts/avalanche-summit-2024/feature-image.png"
-description: "Camera work and design showcase at Avalanche Summit Buenos Aires 2024, featuring recognition from AvaLabs CEO Emin Gun Sirer"
+description: "Camera work and design showcase at Avalanche Summit Buenos Aires 2024, featuring recognition from AvaLabs CEO Emin Gün Sirer"
 ---
 
 <div class="mt-2">
@@ -22,9 +22,9 @@ Representing Hypha at the Avalanche Summit in Buenos Aires 2024, I served as the
 - **Brand Ambassador**: Represented Hypha's visual identity and capabilities
 - **Content Creator**: Captured footage for promotional and documentation purposes
 
-### Meeting Emin Gun Sirer
+### Meeting Emin Gün Sirer
 
-One of the highlights of the summit was the opportunity to meet Emin Gun Sirer, CEO of AvaLabs and creator of Avalanche. During our interaction, he reviewed our design work and provided incredibly positive feedback, stating that our designs were "amazing." This recognition from such a respected figure in the blockchain space was both validating and motivating.
+One of the highlights of the summit was the opportunity to meet Emin Gün Sirer, CEO of AvaLabs and creator of Avalanche. During our interaction, he reviewed our design work and provided incredibly positive feedback, stating that our designs were "amazing." This recognition from such a respected figure in the blockchain space was both validating and motivating.
 
 ### The Buenos Aires Experience
 
@@ -46,7 +46,7 @@ The Avalanche Summit brought together:
 
 ### Design Recognition
 
-Having our design work recognized by Emin Gun Sirer was particularly meaningful because:
+Having our design work recognized by Emin Gün Sirer was particularly meaningful because:
 
 - **Industry Validation**: Confirmation from a respected technical leader
 - **Design Excellence**: Recognition of our visual communication capabilities
@@ -64,7 +64,7 @@ Working as a camera operator at an international summit presented several challe
 
 ### Key Achievements
 
-- **Industry Recognition**: Positive feedback from AvaLabs CEO Emin Gun Sirer
+- **Industry Recognition**: Positive feedback from AvaLabs CEO Emin Gün Sirer
 - **Professional Documentation**: Comprehensive coverage of summit activities
 - **Brand Representation**: Effective showcase of Hypha's capabilities
 - **Network Building**: Connections with key industry professionals
@@ -72,4 +72,4 @@ Working as a camera operator at an international summit presented several challe
 
 ### Final Impact
 
-The Avalanche Summit Buenos Aires 2024 experience was both professionally rewarding and personally fulfilling. The recognition from Emin Gun Sirer validated our design approach, while the camera work provided valuable documentation of Hypha's presence in the broader Avalanche ecosystem. This project demonstrated our ability to represent the company effectively on an international stage while maintaining high standards for both design and documentation.
+The Avalanche Summit Buenos Aires 2024 experience was both professionally rewarding and personally fulfilling. The recognition from Emin Gün Sirer validated our design approach, while the camera work provided valuable documentation of Hypha's presence in the broader Avalanche ecosystem. This project demonstrated our ability to represent the company effectively on an international stage while maintaining high standards for both design and documentation.
