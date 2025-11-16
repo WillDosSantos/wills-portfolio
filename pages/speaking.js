@@ -39,7 +39,7 @@ export default function Speaking() {
       <div className="hero-text" data-aos="fade-up">
         <h1>Speaking</h1>
         <p style={{ fontSize: "1.2rem", marginTop: "1em", maxWidth: "800px" }}>
-          Tech talks and presentations on design, UX, and building products in Web3.
+          Tech talks and presentations on design, UX, and building products.
         </p>
       </div>
       <div data-aos="fade-up" className="post-container">
