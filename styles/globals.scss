@@ -1067,6 +1067,19 @@ body.modal-open {
   z-index: 1;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  
+  iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* Fix z-index for post card hover effects */
 .post-card-text {
   position: absolute;

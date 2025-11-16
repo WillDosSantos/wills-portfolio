@@ -97,6 +97,17 @@ function MobileNavbar({ onTagSelect, isHomePage }) {
               </Link>
             );
           })}
+          <Link href="/speaking">
+            <li
+              onClick={() => {
+                setActiveTag("Speaking");
+                setIsOpen(false);
+              }}
+              className={router.pathname === '/speaking' ? "active" : ""}
+            >
+              Speaking
+            </li>
+          </Link>
         </ul>
       </div>
     </>

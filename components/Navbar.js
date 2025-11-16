@@ -70,12 +70,26 @@ function Navbar({ onTagSelect, isHomePage, onOpenModal }) {
               </Link>
             );
           })}
+          <Link href="/speaking">
+            <li
+              className={router.pathname === '/speaking' ? "active" : ""}
+            >
+              Speaking
+            </li>
+          </Link>
         </ul>
       ) : (
         // Back to home button
         <ul>
           <Link href="/">
             <li>Back to Home</li>
+          </Link>
+          <Link href="/speaking">
+            <li
+              className={router.pathname === '/speaking' ? "active" : ""}
+            >
+              Speaking
+            </li>
           </Link>
         </ul>
       )}
