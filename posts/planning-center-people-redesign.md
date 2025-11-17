@@ -14,7 +14,7 @@ Planning Center People needed a UX refresh for profile pages across both mobile 
 <div class="image-row">
   <img src="/images/posts/people-redux/01.profile-pull-to-refresh.png" alt="Mobile Profile with Pull to Refresh" />
   <img src="/images/posts/people-redux/01.profile.png" alt="Mobile Profile - Main View" />
-  <img src="/images/posts/people-redux/01.profile copy.png" alt="Mobile Profile - Alternative View" />
+  <img src="/images/posts/people-redux/02.profile-edit-2.png" alt="Mobile Profile - Alternative View" />
 </div>
 
 ### Understanding the User Needs
@@ -29,8 +29,6 @@ Before diving into design, we needed to understand how people actually use profi
 ### The Profile Page Redesign
 
 The new profile design focuses on clear information hierarchy, intuitive edit states, and improved visual organization.
-
-![Profile Edit - Step 2](/images/posts/people-redux/02.profile-edit-2.png)
 
 Key improvements:
 - **Clear visual hierarchy** - Most important information is immediately visible
