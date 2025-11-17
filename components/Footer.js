@@ -10,7 +10,7 @@ function Footer() {
                 Will dos Santos Design
             </li>
             <li>
-                San Diego, CA
+                Boise, ID
             </li>
             <li>
                 willdossantosdesigns@gmail.com
