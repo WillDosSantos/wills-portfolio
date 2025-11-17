@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ color: '#fff' }}>
         <ul>
             <li style={{ fontSize:'1.5em', marginBottom: '10px'}}>
                 Will dos Santos Design
