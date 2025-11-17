@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
               />
             </h1>
             <p className="hero-text-p">
-            Hi, I’m Will — a senior UX/UI designer with 15+ years of experience crafting thoughtful digital experiences. I love helping teams sharpen their vision and turn ideas into purposeful, high-quality products.
+            Hi, I’m Will — a senior UX/UI designer with 15+ years of experience crafting thoughtful digital experiences.
             </p>
           </div>
           <div style={{ flex: "0 0 auto", position: "relative" }} className="hero-image-container">
@@ -190,7 +190,7 @@ export default function Home({ allPostsData }) {
 
         <div
           className="companies-section"
-          style={{ maxWidth: "1000px", marginTop: "12rem", marginBottom: "12rem" }}
+          style={{ maxWidth: "1500px", marginTop: "12rem", marginBottom: "12rem" }}
           data-aos="fade-up"
         >
           <h2

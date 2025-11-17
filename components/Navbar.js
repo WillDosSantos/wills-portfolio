@@ -84,13 +84,6 @@ function Navbar({ onTagSelect, isHomePage, onOpenModal }) {
           <Link href="/">
             <li>Back to Home</li>
           </Link>
-          <Link href="/speaking">
-            <li
-              className={router.pathname === '/speaking' ? "active" : ""}
-            >
-              Speaking
-            </li>
-          </Link>
         </ul>
       )}
       <div className="navbar-actions">
