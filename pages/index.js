@@ -44,8 +44,67 @@ export default function Home({ allPostsData }) {
               />
             </h1>
             <p className="hero-text-p">
-            Hi, I’m Will — a senior UX/UI designer with 15+ years of experience crafting thoughtful digital experiences.
+            Hi, I'm Will — a senior UX/UI designer with 15+ years of experience crafting thoughtful digital experiences.
             </p>
+            <div style={{ 
+              display: "flex", 
+              flexWrap: "wrap", 
+              gap: "0.5rem", 
+              marginTop: "1.5rem" 
+            }}>
+                <span 
+                data-aos="fade-up"
+                data-aos-delay="500"
+                style={{
+                  display: "inline-block",
+                  padding: "0.4rem 1rem",
+                  borderRadius: "20px",
+                  backgroundColor: "transparent",
+                  color: "#3935ff",
+                  fontSize: "0.875rem",
+                  fontWeight: "500",
+                  border: "1px solid rgba(57, 53, 255, 0.2)"
+                }}>Design</span>
+              <span 
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style={{
+                  display: "inline-block",
+                  padding: "0.4rem 1rem",
+                  borderRadius: "20px",
+                  backgroundColor: "transparent",
+                  color: "#3935ff",
+                  fontSize: "0.875rem",
+                  fontWeight: "500",
+                  border: "1px solid rgba(57, 53, 255, 0.2)"
+                }}>Front End Development</span>
+              <span 
+                data-aos="fade-up"
+                data-aos-delay="300"
+                style={{
+                  display: "inline-block",
+                  padding: "0.4rem 1rem",
+                  borderRadius: "20px",
+                  backgroundColor: "transparent",
+                  color: "#3935ff",
+                  fontSize: "0.875rem",
+                  fontWeight: "500",
+                  border: "1px solid rgba(57, 53, 255, 0.2)"
+                }}>Motion Graphics</span>
+              <span 
+                data-aos="fade-up"
+                data-aos-delay="400"
+                style={{
+                  display: "inline-block",
+                  padding: "0.4rem 1rem",
+                  borderRadius: "20px",
+                  backgroundColor: "transparent",
+                  color: "#3935ff",
+                  fontSize: "0.875rem",
+                  fontWeight: "500",
+                  border: "1px solid rgba(57, 53, 255, 0.2)"
+                }}>Videography</span>
+            </div>
           </div>
           <div style={{ flex: "0 0 auto", position: "relative" }} className="hero-image-container">
             <div className="testimonial-card testimonial-card-1" style={{
