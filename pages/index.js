@@ -103,7 +103,7 @@ export default function Home({ allPostsData }) {
                   fontSize: "0.875rem",
                   fontWeight: "500",
                   border: "1px solid rgba(57, 53, 255, 0.2)"
-                }}>Videography</span>
+                }}>Illustration</span>
             </div>
           </div>
           <div style={{ flex: "0 0 auto", position: "relative" }} className="hero-image-container">
