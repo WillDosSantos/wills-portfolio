@@ -6,13 +6,13 @@ function Footer() {
   return (
     <footer className="footer" style={{ color: '#fff' }}>
         <ul>
-            <li style={{ fontSize:'1.5em', marginBottom: '10px'}}>
+            <li style={{ fontSize: '1.5em', color: '#fff'}}>
                 Will dos Santos Design
             </li>
-            <li>
+            <li style={{ color: '#fff'}}>
                 Boise, ID
             </li>
-            <li>
+            <li style={{ color: '#fff'}}>
                 willdossantosdesigns@gmail.com
             </li>
         </ul>
