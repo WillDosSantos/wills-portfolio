@@ -13,7 +13,7 @@ function Footer() {
                 Boise, ID
             </li>
             <li style={{ color: '#fff'}}>
-                willdossantosdesigns@gmail.com
+                <a href="mailto:willdossantosdesigns@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>willdossantosdesigns@gmail.com</a>
             </li>
         </ul>
       <ul>
@@ -21,8 +21,8 @@ function Footer() {
           <li>Monday-Friday</li>
           <li>9am - 5pm</li>
       </ul>
-      <ul>
-        <li><strong>Follow</strong></li>
+      <ul className="flex gap-4 md:flex-row flex-col">
+        
           <li>
             <Link href="https://dribbble.com/willds" className="footer-link">Dribbble</Link>
           </li>
@@ -34,6 +34,9 @@ function Footer() {
           </li>
           <li>
             <Link href="https://www.x.com/w_g_teller" className="footer-link">X</Link>
+          </li>
+          <li>
+            <Link href="https://github.com/WillDosSantos" className="footer-link">Github</Link>
           </li>
       </ul>
       {/* This could be a modal or a link */}
