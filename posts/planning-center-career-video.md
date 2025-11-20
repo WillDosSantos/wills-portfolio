@@ -3,7 +3,7 @@ title: 'Career Video'
 date: '2012-07-24'
 tags: ['motion']
 featureImage: "/images/posts/planning-center-career-video/feature-image.png"
-description: "Reflecting on branding for Ready Five - an oncall and incident management application for devs and organizations."
+description: "We wanted to showcase how awesome it is to work at Planning Center. So I tried to capture all that goodness in one video. Doesn't do it justice."
 ---
 
 ### Summary
