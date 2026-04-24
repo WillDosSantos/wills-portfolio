@@ -20,7 +20,7 @@ const WorkHistory = () => {
         }}
       >
         <img
-          src="/images/family.jpg"
+          src="/images/will-avatar-big.png"
           alt="My Family"
           width={800}
           height={1116}
